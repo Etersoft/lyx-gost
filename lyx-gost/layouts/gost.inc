@@ -449,7 +449,7 @@ Preamble
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \EveryShipout{%
   \ClearShipoutPicture%
-  \ifnum \thepage = 1%
+  \ifnum \thepage = 1
 %параметры второго листа
     \AddToShipoutPicture{\BackgroundPicture{\pathtosharedresource \namegostframe 2.eps}{0}}%
     \enlargethispage{-2.5cm}%

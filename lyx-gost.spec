@@ -2,14 +2,14 @@
 %define ENC2 cp1251
 
 Name: lyx-gost
-Version: 1.3.1
-Release: alt2
+Version: 1.3.4
+Release: alt1
 
 Summary: The GOST class files for LyX in koi8-r encoding
 Summary(ru_RU.KOI8-R): Класс текста GOST для LyX в кодировке koi8-r
 License: GPL
 Group: Office
-URL: http://rulyx.narod.ru
+URL: http://www.etersoft.ru/content/category/9/80/63/
 
 Packager: Vitaly Lipatov <lav@altlinux.ru>
 
@@ -28,7 +28,7 @@ according to Russian GOST's demands.
 подготовки технической текстовой документации в соответствии
 с ГОСТ 2.105-95 (с рамками и основными надписями).
 
-%package koi8-r
+%package %ENC1
 Summary: The GOST class files for LyX in koi8-r encoding
 Summary(ru_RU.KOI8-R): Класс текста GOST для LyX в кодировке koi8-r
 Group: Office
@@ -38,16 +38,16 @@ Conflicts: lyx-gost-cp1251
 Obsoletes: lyx-gost
 
 
-%description koi8-r
+%description %ENC1
 The %name package contains the LyX/LaTeX class for preparing documents
 according to Russian GOST's demands.
 
-%description koi8-r -l ru_RU.KOI8-R
+%description %ENC1 -l ru_RU.KOI8-R
 Пакет %name содержит класс для LyX/LaTeX, предназначенный для
 подготовки технической текстовой документации в соответствии
 с ГОСТ 2.105-95 (с рамками и основными надписями).
 
-%package cp1251
+%package %ENC2
 Summary: The GOST class files for LyX in cp1251 encoding
 Summary(ru_RU.KOI8-R): Класс текста GOST для LyX в кодировке cp1251
 Group: Office
@@ -56,11 +56,11 @@ Provides: lyx-gost
 Conflicts: lyx-gost-koi8-r
 Obsoletes: lyx-gost
 
-%description cp1251
+%description %ENC2
 The %name package contains the LyX/LaTeX class for preparing documents
 according to Russian GOST's demands.
 
-%description cp1251 -l ru_RU.KOI8-R
+%description %ENC2 -l ru_RU.KOI8-R
 Пакет %name содержит класс для LyX/LaTeX, предназначенный для
 подготовки технической текстовой документации в соответствии
 с ГОСТ 2.105-95 (с рамками и основными надписями).
@@ -141,6 +141,11 @@ cd %prefix/share/lyx
 
 
 %changelog
+* Fri Jun 18 2004 Vitaly Lipatov <lav@altlinux.ru> 1.3.4-alt1
+- fix bug with formulae
+- fix URL
+- tested with LyX 1.3.4
+
 * Tue May 13 2003 Vitaly Lipatov <lav@altlinux.ru> 1.3.1-alt2
 - fixed encoding for docs in cp1251
 - fixed name of docs dir
