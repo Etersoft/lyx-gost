@@ -1,12 +1,10 @@
-%define ENC1 koi8-r
-%define ENC2 cp1251
-
 Name: lyx-gost
-Version: 1.3.4
+Version: 1.3.5
 Release: alt1
 
 Summary: The GOST class files for LyX in koi8-r encoding
-Summary(ru_RU.KOI8-R): Класс текста GOST для LyX в кодировке koi8-r
+Summary(ru_RU.KOI8-R): Класс документа по ГОСТ для LyX в кодировке koi8-r
+
 License: GPL
 Group: Office
 URL: http://www.etersoft.ru/content/category/9/80/63/
@@ -17,7 +15,10 @@ Source: %name-%version.tar.bz2
 
 BuildArchitectures: noarch
 BuildPreReq: iconv
-PreReq: lyx >= 1.3.0
+PreReq: lyx >= 1.3.4
+
+%define ENC1 koi8-r
+%define ENC2 cp1251
 
 %description
 The %name package contains the LyX/LaTeX class for preparing documents
@@ -30,7 +31,7 @@ according to Russian GOST's demands.
 
 %package %ENC1
 Summary: The GOST class files for LyX in koi8-r encoding
-Summary(ru_RU.KOI8-R): Класс текста GOST для LyX в кодировке koi8-r
+Summary(ru_RU.KOI8-R): Класс документа по ГОСТ для LyX в кодировке koi8-r
 Group: Office
 
 Provides: lyx-gost
@@ -49,7 +50,7 @@ according to Russian GOST's demands.
 
 %package %ENC2
 Summary: The GOST class files for LyX in cp1251 encoding
-Summary(ru_RU.KOI8-R): Класс текста GOST для LyX в кодировке cp1251
+Summary(ru_RU.KOI8-R): Класс документа по ГОСТ для LyX в кодировке cp1251
 Group: Office
 
 Provides: lyx-gost
@@ -141,6 +142,9 @@ cd %prefix/share/lyx
 
 
 %changelog
+* Mon Feb 14 2005 Vitaly Lipatov <lav@altlinux.ru> 1.3.5-alt1
+- tested with LyX 1.3.5
+
 * Fri Jun 18 2004 Vitaly Lipatov <lav@altlinux.ru> 1.3.4-alt1
 - fix bug with formulae
 - fix URL
