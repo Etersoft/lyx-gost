@@ -1,6 +1,6 @@
 Name: lyx-gost
 Version: 1.3.5
-Release: alt1
+Release: alt2
 
 Summary: The GOST class files for LyX in koi8-r encoding
 Summary(ru_RU.KOI8-R): Класс документа по ГОСТ для LyX в кодировке koi8-r
@@ -33,6 +33,7 @@ according to Russian GOST's demands.
 Summary: The GOST class files for LyX in koi8-r encoding
 Summary(ru_RU.KOI8-R): Класс документа по ГОСТ для LyX в кодировке koi8-r
 Group: Office
+Requires: lyx-common
 
 Provides: lyx-gost
 Conflicts: lyx-gost-cp1251
@@ -52,6 +53,7 @@ according to Russian GOST's demands.
 Summary: The GOST class files for LyX in cp1251 encoding
 Summary(ru_RU.KOI8-R): Класс документа по ГОСТ для LyX в кодировке cp1251
 Group: Office
+Requires: lyx-common
 
 Provides: lyx-gost
 Conflicts: lyx-gost-koi8-r
@@ -142,6 +144,9 @@ cd %prefix/share/lyx
 
 
 %changelog
+* Thu Mar 03 2005 Vitaly Lipatov <lav@altlinux.ru> 1.3.5-alt2
+- add requires for lyx-common (bug #6197)
+
 * Mon Feb 14 2005 Vitaly Lipatov <lav@altlinux.ru> 1.3.5-alt1
 - tested with LyX 1.3.5
 
