@@ -1,0 +1,81 @@
+#% Do not delete the line below; configure depends on this
+#  \DeclareLaTeXClass[article]{GOST}
+# Article textclass definition file. Taken from initial LyX source code
+# Author : Matthias Ettrich <ettrich@informatik.uni-tuebingen.de>
+# Transposed by Pascal André <andre@via.ecp.fr>
+# Heavily modifed and enhanced by serveral developers
+
+# GOST textclass definition file.
+# Based on Article textclass definition file for LyX, latex.ltx, article.cls
+# and other files from /usr/share/texmf (tetex version)
+# (c) 2001-2002 Boris Balabanov
+# (c) 2001-2003 Vitaly Lipatov
+# Our parts licensed under GPL
+# $Id$
+
+# General textclass parameters
+Columns			1
+Sides			1
+
+# This is just to show how to declare the default font.
+# The defaults are exactly those shown here.
+DefaultFont
+  Family		Roman
+  Series		Medium
+  Shape			Up
+  Size			Normal
+  Color			None
+EndFont
+
+# Standard style definition
+Style Standard
+  Margin  		Static
+  LatexType 		Paragraph
+  LatexName 		dummy
+  ParIndent		MM
+  ParSkip 		0.4
+  Align 		Block
+  AlignPossible 	Block, Left, Right, Center
+  LabelType 		No_Label
+End
+
+
+# Inputs for various encoding compatibility
+
+
+Input stdstruct.inc
+Input lyxmacros.inc
+Input stdfloats.inc
+Input stdcounters.inc
+
+Input gost-koi8-r.inc
+Input gostsections-koi8-r.inc
+Input gostenum-koi8-r.inc
+Input gostlists-koi8-r.inc
+Input goststarsections-koi8-r.inc
+Input gosttitle-koi8-r.inc
+Input gostlayouts-koi8-r.inc
+Input gostobsolete-koi8-r.inc
+
+Input gost-cp1251.inc
+Input gostsections-cp1251.inc
+Input gostenum-cp1251.inc
+Input gostlists-cp1251.inc
+Input goststarsections-cp1251.inc
+Input gosttitle-cp1251.inc
+Input gostlayouts-cp1251.inc
+Input gostobsolete-cp1251.inc
+
+
+# There are no some styles in the GOST.
+NoStyle Description
+NoStyle List
+NoStyle Paragraph
+NoStyle Paragraph*
+NoStyle Subparagraph
+NoStyle Subparagraph*
+#NoStyle Caption
+
+MaxCounter		Counter_Section
+SecNumDepth		3
+TocDepth		3

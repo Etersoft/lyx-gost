@@ -1,0 +1,498 @@
+%!PS-Adobe-3.0
+%%Title: GOST-FRAME
+%%Creator: PSCRIPT
+%%CreationDate: 10/19/01 15:32:39
+%%BoundingBox: 14 13 581 829 
+%%Pages: (atend)
+%%PageOrder: Special
+%%Requirements: 
+%%DocumentNeededFonts: (atend)
+%%DocumentSuppliedFonts: (atend)
+%%DocumentData: Clean7Bit
+%%LanguageLevel: 2
+%%EndComments
+
+%%BeginProlog 
+%%BeginProcSet: Pscript_Win_ErrorHandler 1.0 1
+/currentpacking where{pop/oldpack currentpacking def/setpacking where{pop
+false setpacking}if}if/$brkpage 64 dict def $brkpage begin/prnt{dup type
+/stringtype ne{=string cvs}if dup length 6 mul/tx exch def/ty 10 def
+currentpoint/toy exch def/tox exch def 1 setgray newpath tox toy 2 sub moveto
+0 ty rlineto tx 0 rlineto 0 ty neg rlineto closepath fill tox toy moveto 0
+setgray show}bind def/nl{currentpoint exch pop lmargin exch moveto 0 -10
+rmoveto}def/=={/cp 0 def typeprint nl}def/typeprint{dup type exec}readonly def
+/lmargin 72 def/rmargin 72 def/tprint{dup length cp add rmargin gt{nl/cp 0 def
+}if dup length cp add/cp exch def prnt}readonly def/cvsprint{=string cvs
+tprint( )tprint}readonly def/integertype{cvsprint}readonly def/realtype{
+cvsprint}readonly def/booleantype{cvsprint}readonly def/operatortype{(--)
+tprint =string cvs tprint(-- )tprint}readonly def/marktype{pop(-mark- )tprint}
+readonly def/dicttype{pop(-dictionary- )tprint}readonly def/nulltype{pop
+(-null- )tprint}readonly def/filetype{pop(-filestream- )tprint}readonly def
+/savetype{pop(-savelevel- )tprint}readonly def/fonttype{pop(-fontid- )tprint}
+readonly def/nametype{dup xcheck not{(/)tprint}if cvsprint}readonly def
+/stringtype{dup rcheck{(\()tprint tprint(\))tprint}{pop(-string- )tprint}
+ifelse}readonly def/arraytype{dup rcheck{dup xcheck{({)tprint{typeprint}forall
+(})tprint}{([)tprint{typeprint}forall(])tprint}ifelse}{pop(-array- )tprint}
+ifelse}readonly def/packedarraytype{dup rcheck{dup xcheck{({)tprint{typeprint}
+forall(})tprint}{([)tprint{typeprint}forall(])tprint}ifelse}{pop
+(-packedarray- )tprint}ifelse}readonly def/courier/Courier findfont 10
+scalefont def end errordict/handleerror{systemdict begin $error begin $brkpage
+begin newerror{/newerror false store vmstatus pop pop 0 ne{grestoreall}if
+showpage initgraphics courier setfont lmargin 720 moveto(ERROR: )prnt
+errorname prnt nl(OFFENDING COMMAND: )prnt/command load prnt $error/ostack
+known{nl nl(STACK:)prnt nl nl $error/ostack get aload length{==}repeat}if
+systemdict/showpage get exec(%%[ Error: )print errorname =print
+(; OffendingCommand: )print/command load =print( ]%%)= flush}if end end end}
+dup 0 systemdict put dup 4 $brkpage put bind readonly put/currentpacking where
+{pop/setpacking where{pop oldpack setpacking}if}if
+%%EndProcSet
+userdict /Pscript_Win_Driver_Incr 200 dict dup begin put
+%%BeginResource: file Pscript_FatalError 2.0 0
+/FatalErrorIf{{initgraphics findfont exch scalefont setfont counttomark 3 div
+cvi{moveto show}repeat showpage quit}{cleartomark}ifelse}bind def
+%%EndResource
+/VM? {vmstatus exch sub exch pop gt { [
+(This job requires more memory than is available in this printer.) 100 500
+(Try one or more of the following, and then print again:) 100 485
+(In the PostScript dialog box, click Optimize For Portability.) 115 470
+(In the Device Options dialog box, make sure the Available Printer Memory is accurate.) 115 455
+(Reduce the number of fonts in the document.) 115 440
+(Print the document in parts.) 115 425
+12 /Times-Roman showpage
+(%%[ PrinterError: Low Printer VM ]%%) =
+true FatalErrorIf}if} bind def
+30000  VM?
+%%BeginResource: file Pscript_Win_Utils 2.0 0
+/|/def load def/,/load load |/~/exch , |/?/ifelse , |/!/pop , |/`/begin , |/^
+/index , |/@/dup , |/+/translate , |/$/roll , |/U/userdict , |/M/moveto , |/-
+/rlineto , |/&/currentdict , |/:/gsave , |/;/grestore , |/F/false , |/T/true ,
+|/N/newpath , |/E/end , |/Ac/arc , |/An/arcn , |/A/ashow , |/D/awidthshow , |
+/C/closepath , |/V/div , |/O/eofill , |/L/fill , |/I/lineto , |/-C/rcurveto ,
+|/-M/rmoveto , |/+S/scale , |/Ji/setfont , |/Lc/setlinecap , |/Lj/setlinejoin
+, |/Lw/setlinewidth , |/S/show , |/LH/showpage , |/K/stroke , |/W/widthshow ,
+|/R/rotate , |/b{bind |}bind |/bd{bind |}bind |/xd{~ |}bd/ld{, |}bd/lw/Lw ld
+/lc/Lc ld/lj/Lj ld/sg/setgray ld/L2? F/languagelevel where{! languagelevel 2
+ge{! T}if}if |/g{@ not{U/DefIf_save save put}if U/DefIf_bool 2 ^ put}b
+/DefIf_El{if U/DefIf_bool get not @{U/DefIf_save get restore}if}b/e{DefIf_El !
+}b/self & |/reinitialize{[/TextInit/GraphInit/UtilsInit counttomark{@ where{
+self eq}{F}?{cvx exec}{!}?}repeat cleartomark}b/initialize{`{/ADO_mxRot ~ |
+/TextInitialised? F | reinitialize E}{U/Pscript_Win_Data 200 dict @ ` put
+/ADO_mxRot ~ |/TextInitialised? F | reinitialize}?}b/terminate{!{& self eq{
+exit}{E}?}loop E}b/suspend/terminate , |/resume{` Pscript_Win_Data `}b/snap{
+transform 0.25 sub round 0.25 add ~ 0.25 sub round 0.25 add ~ itransform}b
+/dsnap{dtransform round ~ round ~ idtransform}b<04>cvn{}|/setjn{{statusdict
+/jobname known{statusdict/jobname 3 -1 $ put}if}stopped cleartomark}b/solid{[]
+0 setdash}b/setdsh{0 setdash}b/colspRefresh{}b/rp{4 2 $ M 1 ^ 0 - 0 ~ - neg 0
+-}b/rr{1 ^ 0 - 0 ~ - neg 0 - C}b
+%%EndResource
+%%BeginResource: file Pscript_Win_Utils_L1 2.0 0
+L2? not g{/rf{N rp L}b/fx{1 1 dtransform @ 0 ge{1 sub 1}{1 add -0.25}? 3 -1 $
+@ 0 ge{1 sub 1}{1 add -0.25}? 3 1 $ 4 1 $ idtransform 4 -2 $ idtransform}b/BZ{
+4 -2 $ snap + +S fx rf}b/rs{N rp C K}b/rc{N rp clip N}b/sg{setgray}b/sco{
+setrgbcolor}b/sgco{{sg}{sco}?}b}e
+%%EndResource
+%%BeginResource: file Pscript_Win_Utils_L2 2.0 0
+L2? g{/colspA/DeviceGray |/colspABC/DeviceRGB |/setAorABC{{colspA}{colspABC}?
+setcolorspace}b/rf/rectfill , |/fx{1 1 dtransform @ 0 ge{1 sub 0.5}{1 add -0.5
+}? 3 -1 $ @ 0 ge{1 sub 0.5}{1 add -0.5}? 3 1 $ 4 1 $ idtransform 4 -2 $
+idtransform}b/BZ{4 -2 $ snap + +S fx rf}b/rs/rectstroke , |/rc/rectclip , |/sg
+{@ @ setcolor}b/sco{setcolor}b/colspRefresh{colspABC setcolorspace}b/sgco{{sg
+}{sco}?}b/UtilsInit{F setglobal}b/definecolorrendering{/ColorRendering
+defineresource !}b/findcolorrendering{@/ColorRendering resourcestatus{! !
+/ColorRendering findresource T}{! F}?}b/selectcolorrendering{@/ColorRendering
+resourcestatus{! !/ColorRendering}{!/DefaultColorRendering/ColorRendering}?
+findresource setcolorrendering}b}e
+%%EndResource
+end
+%%EndProlog
+
+%%BeginSetup 
+[ 1.000 0 0 1.000 0 0 ] false Pscript_Win_Driver_Incr dup /initialize get exec
+
+[{0 
+/languagelevel where{pop languagelevel}{1}ifelse 2 ge{1 dict dup/JobTimeout  4 -1 roll put setuserparams}{statusdict/setjobtimeout get exec}ifelse 
+} stopped cleartomark
+[{240 
+/languagelevel where{pop languagelevel}{1}ifelse 2 ge{1 dict dup/WaitTimeout 4 -1 roll put setuserparams}{statusdict/waittimeout 3 -1 roll put}ifelse 
+} stopped cleartomark
+[{
+%%BeginFeature: *Levels of Gray Printer’s Current Setting
+
+%%EndFeature
+} stopped cleartomark
+[{
+
+             <</ManualFeed false>> setpagedevice
+} stopped cleartomark
+[{
+%%BeginFeature: *InputSlot AutoSelect Tray
+
+%%EndFeature
+} stopped cleartomark
+[{
+%%BeginFeature: *Resolution Enhancement On
+
+<< /PostRenderingEnhance true
+     /PostRenderingEnhanceDetails << /REValue 2 /Type 8 >>
+>> setpagedevice
+%%EndFeature
+} stopped cleartomark
+[{
+%%BeginFeature: *PageSize A4
+
+    <</DeferredMediaSelection true /PageSize [595 842] /ImagingBBox null>> setpagedevice
+%%EndFeature
+} stopped cleartomark
+1 setlinecap 1 setlinejoin 
+/mysetup [ 0.120 0 0 -0.120 14.000 829.000 ] | 
+%%EndSetup
+
+userdict begin /savelevel0 save def end
+%%Page: 1 1
+%%BeginPageSetup
+[{
+%%BeginFeature: *VMOption 3MB
+
+%%EndFeature
+} stopped cleartomark
+[{
+%%BeginFeature: *Duplex 
+
+%%EndFeature
+} stopped cleartomark
+userdict begin /pagesave save def end mysetup concat colspRefresh : 1.000 1.000 1.000 sco 0 0 4958 7016 rf ; 
+%%EndPageSetup
+
+pagesave restore
+Pscript_Win_Driver_Incr begin
+%%BeginResource: file Pscript_Win_Graphics 2.0 0
+/SavedCTM null |/CTMsave{/SavedCTM SavedCTM currentmatrix |}b/CTMrestore{
+SavedCTM setmatrix}b/mp null |/ADO_mxRot null |/GDIHMatrix null |
+/GDIHPatternDict 22 dict | GDIHPatternDict `/PatternType 1 |/PaintType 2 |
+/Reps L2?{1}{5}? |/XStep 8 Reps mul |/YStep XStep |/BBox[0 0 XStep YStep]|
+/TilingType 1 |/PaintProc{` 1 Lw[]0 setdash PaintData , exec E}b/FGnd null |
+/BGnd null |/HS_Horizontal{horiz}b/HS_Vertical{vert}b/HS_FDiagonal{fdiag}b
+/HS_BDiagonal{biag}b/HS_Cross{horiz vert}b/HS_DiagCross{fdiag biag}b/MaxXYStep
+XStep YStep gt{XStep}{YStep}? |/horiz{Reps{0 4 M XStep 0 - 0 8 +}repeat 0 -8
+Reps mul + K}b/vert{Reps{4 0 M 0 YStep - 8 0 +}repeat 0 -8 Reps mul + K}b/biag
+{Reps{0 0 M MaxXYStep @ - 0 YStep neg M MaxXYStep @ - 0 8 +}repeat 0 -8 Reps
+mul + 0 YStep M 8 8 - K}b/fdiag{Reps{0 0 M MaxXYStep @ neg - 0 YStep M
+MaxXYStep @ neg - 0 8 +}repeat 0 -8 Reps mul + MaxXYStep @ M 8 -8 - K}b E
+/makehatch{GDIHPatternDict/PaintData 3 -1 $ put CTMsave GDIHMatrix setmatrix
+GDIHPatternDict matrix mp CTMrestore ~ U ~ 2 ^ put}b/h0{/h0/HS_Horizontal
+makehatch}b/h1{/h1/HS_Vertical makehatch}b/h2{/h2/HS_FDiagonal makehatch}b/h3{
+/h3/HS_BDiagonal makehatch}b/h4{/h4/HS_Cross makehatch}b/h5{/h5/HS_DiagCross
+makehatch}b/GDIBWPatternDict 17 dict @ `/PatternType 1 |/PaintType L2?{1}{2}?
+|/RepsV L2?{1}{6}? |/RepsH L2?{1}{5}? |/BBox[0 0 RepsH 1]|/TilingType 1 |
+/XStep 1 |/YStep 1 |/Height 8 RepsV mul |/Width 8 |/mx[Width 0 0 Height neg 0
+Height]|/FGnd null |/BGnd null |/SetBGndFGnd L2?{{BGnd null ne{BGnd aload !
+sgco BBox aload ! 2 ^ sub ~ 3 ^ sub ~ rf}if FGnd null ne{FGnd aload ! sgco}if}
+}{{}}? b/PaintProc{` SetBGndFGnd RepsH{Width Height F mx PaintData imagemask
+Width 0 +}repeat E}b E |/GDIBWPatternMx null |/pfprep{save 4 1 $
+/PatternOfTheDay 4 1 $ GDIBWPatternDict `/PaintData ~ |/BGnd ~ |/FGnd ~ | E
+CTMsave GDIBWPatternMx setmatrix GDIBWPatternDict matrix mp CTMrestore ~ !}b
+/hrf null |/prf{pfprep ~ 6 1 $ 5 hrf restore}b/GraphInit{GDIHMatrix null eq{
+/SavedCTM matrix | : ADO_mxRot concat 0 0 snap + : 0.48 @ GDIHPatternDict `
+YStep mul ~ XStep mul ~ dsnap YStep V ~ XStep V ~ E +S/GDIHMatrix matrix
+currentmatrix readonly | ; : 0.24 -0.24 +S GDIBWPatternDict ` Width Height E
+dsnap +S/GDIBWPatternMx matrix currentmatrix readonly | ; ;}if}b/cirp{360 0 An
+C}b/ellp{CTMsave + +S 0.5 0 M 0 0 0.5 360 0 An C CTMrestore}b/rrp{/rad ~ |/y2
+~ |/x2 ~ |/y1 ~ |/x1 ~ | x2 x1 add 2 V y1 M x1 y1 x1 y2 rad arct x1 y2 x2 y2
+rad arct x2 y2 x2 y1 rad arct x2 y1 x1 y1 rad arct C}b/RRp{CTMsave + +S/dyS ~
+|/dxS ~ | dxS 2 V 0 M 0 0 0 dyS 0.5 arct 0 dyS dxS dyS 0.5 arct dxS dyS dxS 0
+0.5 arct dxS 0 0 0 0.5 arct C CTMrestore}b
+%%EndResource
+
+%%BeginResource: file Pscript_Win_Graphics_L1 2.0 0
+L2? not g{/arct{arcto ! ! ! !}b/GDIpattfill{@ ` BGnd null ne PaintType 2 eq
+and{: BGnd aload ! sgco fEOFill{O}{L}? ; FGnd aload ! U/fGray 2 ^ put{2}{4}?
+-1 $}if E @ patterncalc : 4 ^/PaintType get 2 eq{fGray{6 -1 $ sg}{8 -3 $ sco}?
+}if fEOFill{eoclip}{clip}? N patternfill ; N}b/hrf{/fGray 1 ^ 6 eq | -4 $ N rp
+C/fEOFill F | GDIpattfill}b/hfMain{/fEOFill ~ |/fGray ~ | GDIpattfill}b/hf{T
+hfMain}b/hfW{F hfMain}b/hs{currentpoint strokepath M hfW}b/pfMain{/fEOFill ~ |
+pfprep GDIpattfill restore N}b/pf{T pfMain}b/pfW{F pfMain}b/ps{currentpoint
+strokepath M pfW}b/mpstr 1 string |/mp{~ @ length 12 add dict copy `
+/PatternCTM matrix currentmatrix |/PatternMatrix ~ |/PatWidth XStep mpstr
+length mul |/PatHeight YStep |/FontType 3 |/Encoding 256 array | 3 string 0 1
+255{Encoding ~ @ 3 ^ cvs cvn put}for !/FontMatrix matrix |/FontBBox BBox |
+/BuildChar{! @ ` XStep 0 FontBBox aload ! setcachedevice/PaintProc , E : exec
+;}b & E ~ @ 3 -1 $ definefont}b/patterncalc{` : PatternCTM setmatrix
+PatternMatrix concat BBox aload ! ! ! + pathbbox ; PatHeight V ceiling 4 1 $
+PatWidth V ceiling 4 1 $ PatHeight V floor 4 1 $ PatWidth V floor 4 1 $ 2 ^
+sub cvi abs ~ 3 ^ sub cvi abs ~ 4 2 $ PatHeight mul ~ PatWidth mul ~ E}b
+/patternfill{5 -1 $ @ ` Ji PatternCTM setmatrix PatternMatrix concat 0 2 ^ 2 ^
+M 0 1 mpstr length 1 sub{1 ^ mpstr 3 1 $ put}for ! 2 ^{currentpoint 5 ^{mpstr
+S}repeat YStep add M}repeat ! ! ! ! E}b}e
+%%EndResource
+
+%%BeginResource: file Pscript_Win_Graphics_L2 2.0 0
+L2? g{/mp/makepattern , |/hrf{6 eq setAorABC setpattern rectfill}b/hf{
+setAorABC setpattern O}b/hfW{setAorABC setpattern L}b/hs{setAorABC setpattern
+K}b/pf{pfprep setpattern O restore N}b/pfW{pfprep setpattern L restore N}b/ps{
+pfprep setpattern K restore N}b}e
+%%EndResource
+
+end reinitialize
+userdict begin /pagesave save def end mysetup concat colspRefresh 
+
+4468 6530 N M 0 6 - -4 -1 - -2 -3 - 0 -4 - 2 -3 - 4 -2 - 0 7 - C : 0 0 0 sco O ; 
+4468 6523 N M 0 7 - 0 6 - 235 0 - 0 -6 - 0 -7 - -235 0 - C : 0 0 0 sco O ; 
+4703 6530 N M 0 -7 - 4 2 - 2 3 - 0 4 - -2 3 - -4 1 - 0 -6 - C : 0 0 0 sco O ; 
+4556 6404 N M -5 2 - -17 63 - 0 2 - 2 1 - 2 -1 - 1 -2 - 17 -65 - C : 0 0 0 sco O ; 
+4554 6401 N M -15 0 - -3 2 - -37 65 - -1 1 - 1 2 - 1 1 - 3 -2 - 37 -64 - 11 0 - 5 -2 - -2 -3 - C : 0 0 0 sco O ; 
+4564 6421 N M -2 1 - -1 2 - -10 38 - 1 7 - 8 -2 - -4 -2 - 0 -3 - 10 -38 - 0 -2 - -2 -1 - C : 0 0 0 sco O ; 
+4589 6421 N M -2 1 - -1 2 - -11 43 - -15 0 - -8 2 - 6 3 - 18 0 - 3 -3 - 12 -45 - 0 -2 - -2 -1 - C : 0 0 0 sco O ; 
+4630 6421 N M -18 0 - -8 3 - -5 7 - -8 31 - 1 7 - 6 3 - 18 0 - 2 -1 - 1 -2 - 0 -2 - -2 0 - -17 0 - -3 -2 - -1 -3 - 8 -31 - 3 -3 - 4 -2 - 17 0 - 2 -1 - 1 -1 - 0 -2 - -1 -1 - C : 0 0 0 sco O ; 
+4666 6426 N M -5 0 - -11 43 - 0 2 - 1 1 - 2 -1 - 2 -2 - 11 -43 - C : 0 0 0 sco O ; 
+4684 6424 N M -8 2 - 3 2 - 1 3 - -10 38 - 0 2 - 2 1 - 2 -1 - 1 -2 - 10 -38 - -1 -7 - C : 0 0 0 sco O ; 
+4677 6421 N M -32 0 - -3 3 - -13 45 - 1 2 - 1 1 - 2 -1 - 1 -2 - 12 -43 - 15 0 - 5 0 - 10 0 - 8 -2 - -7 -3 - C : 0 0 0 sco O ; 
+4468 6365 N M -6 0 - 1 -4 - 3 -2 - 4 0 - 3 2 - 2 4 - -7 0 - C : 0 0 0 sco O ; 
+4475 6365 N M -7 0 - -6 0 - 0 353 - 6 0 - 7 0 - 0 -353 - C : 0 0 0 sco O ; 
+4468 6718 N M 7 0 - -2 4 - -3 2 - -4 0 - -3 -2 - -1 -4 - 6 0 - C : 0 0 0 sco O ; 
+4703 6718 N M 7 0 - -2 4 - -3 2 - -4 0 - -3 -2 - -1 -4 - 6 0 - C : 0 0 0 sco O ; 
+4697 6718 N M 6 0 - 7 0 - 0 -6676 - -7 0 - -6 0 - 0 6676 - C : 0 0 0 sco O ; 
+4703 42 N M -6 0 - 1 -4 - 3 -2 - 4 0 - 3 2 - 2 4 - -7 0 - C : 0 0 0 sco O ; 
+72 3309 N M 0 6 - -4 -1 - -2 -3 - 0 -4 - 2 -3 - 4 -2 - 0 7 - C : 0 0 0 sco O ; 
+72 3302 N M 0 7 - 0 6 - 282 0 - 0 -6 - 0 -7 - -282 0 - C : 0 0 0 sco O ; 
+354 3309 N M 0 -7 - 4 2 - 2 3 - 0 4 - -2 3 - -4 1 - 0 -6 - C : 0 0 0 sco O ; 
+72 4132 N M 0 6 - -4 -1 - -2 -3 - 0 -4 - 2 -3 - 4 -2 - 0 7 - C : 0 0 0 sco O ; 
+72 4125 N M 0 7 - 0 6 - 282 0 - 0 -6 - 0 -7 - -282 0 - C : 0 0 0 sco O ; 
+354 4132 N M 0 -7 - 4 2 - 2 3 - 0 4 - -2 3 - -4 1 - 0 -6 - C : 0 0 0 sco O ; 
+89 3891 N M 2 6 - 63 17 - 2 -1 - 1 -1 - -1 -2 - -2 -1 - -65 -18 - C : 0 0 0 sco O ; 
+86 3893 N M 0 30 - 3 3 - 65 18 - 2 0 - 1 -2 - -1 -2 - -2 -1 - -63 -17 - 0 -25 - -2 -6 - -3 2 - C : 0 0 0 sco O ; 
+109 3884 N M 7 4 - 31 9 - 7 -1 - -2 -8 - -2 3 - -3 1 - -31 -9 - -3 -2 - -2 -4 - 0 -10 - -2 17 - C : 0 0 0 sco O ; 
+106 3866 N M 0 10 - 3 8 - 2 -17 - 2 -3 - 3 -1 - 31 8 - 3 3 - 2 4 - 0 10 - 2 8 - 3 -7 - 0 -10 - -3 -8 - -7 -5 - -31 -8 - -7 1 - -3 7 - C : 0 0 0 sco O ; 
+109 3843 N M 7 5 - 31 8 - 7 -1 - -2 -8 - -2 4 - -3 0 - -31 -8 - -3 -2 - -2 -4 - 0 -15 - -2 21 - C : 0 0 0 sco O ; 
+86 3820 N M 0 18 - 1 2 - 2 1 - 2 0 - 0 -2 - 0 -18 - 2 -3 - 3 0 - 10 2 - 0 15 - 3 8 - 2 -21 - 36 9 - 3 2 - 2 5 - 0 9 - 2 8 - 3 -6 - 0 -10 - -3 -8 - -7 -5 - -51 -13 - -7 1 - -3 6 - C : 0 0 0 sco O ; 
+109 3779 N M 2 7 - 2 -3 - 3 0 - 38 10 - 2 0 - 1 -2 - -1 -2 - -2 -1 - -38 -10 - -7 1 - C : 0 0 0 sco O ; 
+106 3785 N M 0 18 - 3 3 - 45 12 - 2 0 - 1 -2 - -1 -2 - -2 -1 - -43 -12 - 0 -15 - -2 -7 - -3 6 - C : 0 0 0 sco O ; 
+152 3775 N M 0 -2 - 2 0 - 2 1 - 1 2 - -1 2 - -2 0 - -1 -1 - -1 -2 - C : 0 0 0 sco O ; 
+106 3717 N M 1 2 - 2 1 - 38 10 - 7 -1 - -2 -7 - -2 3 - -3 0 - -38 -10 - -2 0 - -1 2 - C : 0 0 0 sco O ; 
+106 3692 N M 1 2 - 2 1 - 43 12 - 0 15 - 2 7 - 3 -6 - 0 -18 - -3 -3 - -45 -12 - -2 0 - -1 2 - C : 0 0 0 sco O ; 
+109 3647 N M 7 5 - 31 8 - 7 -1 - -2 -8 - -2 3 - -3 1 - -31 -8 - -3 -3 - -2 -4 - 0 -15 - -2 22 - C : 0 0 0 sco O ; 
+86 3624 N M 0 17 - 1 2 - 2 1 - 2 0 - 0 -2 - 0 -17 - 2 -3 - 3 -1 - 10 3 - 0 15 - 3 8 - 2 -22 - 36 10 - 3 2 - 2 4 - 0 10 - 2 8 - 3 -7 - 0 -10 - -3 -8 - -7 -4 - -51 -14 - -7 1 - -3 7 - C : 0 0 0 sco O ; 
+152 3587 N M 1 7 - 2 -2 - 2 -2 - 0 -1 - -1 -2 - -2 -1 - -2 1 - C : 0 0 0 sco O ; 
+109 3607 N M 7 4 - 31 9 - 7 -1 - 3 -7 - 0 -10 - -4 -8 - -1 -7 - 0 24 - -2 3 - -3 0 - -31 -8 - -3 -2 - -2 -4 - 0 -15 - -2 22 - C : 0 0 0 sco O ; 
+106 3581 N M 0 18 - 3 8 - 2 -22 - 36 9 - 3 3 - 2 4 - 0 10 - 0 -24 - -2 2 - -3 0 - -38 -10 - -3 2 - C : 0 0 0 sco O ; 
+111 3545 N M 0 5 - 43 11 - 2 0 - 1 -2 - -1 -2 - -2 -1 - -43 -11 - C : 0 0 0 sco O ; 
+109 3527 N M 2 8 - 2 -4 - 3 0 - 38 10 - 2 0 - 1 -2 - -1 -2 - -2 -1 - -38 -10 - -7 1 - C : 0 0 0 sco O ; 
+106 3533 N M 0 33 - 3 3 - 45 12 - 2 0 - 1 -2 - -1 -2 - -2 -1 - -43 -11 - 0 -15 - 0 -5 - 0 -10 - -2 -8 - -3 6 - C : 0 0 0 sco O ; 
+152 3492 N M 1 6 - 2 -2 - 2 -2 - -1 -2 - -2 -2 - -2 2 - C : 0 0 0 sco O ; 
+109 3511 N M 7 5 - 31 8 - 7 -1 - 3 -7 - 0 -10 - -4 -8 - -1 -6 - 0 23 - -2 3 - -3 1 - -31 -8 - -3 -3 - -2 -4 - 0 -15 - -2 22 - C : 0 0 0 sco O ; 
+106 3485 N M 0 18 - 3 8 - 2 -22 - 36 10 - 3 2 - 2 4 - 0 10 - 0 -23 - -2 2 - -3 0 - -38 -11 - -3 2 - C : 0 0 0 sco O ; 
+118 5196 N M 3 8 - 4 -6 - 7 -1 - 10 2 - 7 5 - 3 8 - 0 15 - 0 -25 - -1 -2 - -9 -6 - -10 -2 - -8 0 - -6 4 - C : 0 0 0 sco O ; 
+91 5187 N M 0 11 - 3 -6 - 7 -1 - 5 1 - 7 5 - 3 8 - 0 13 - 2 -22 - -5 -6 - -7 -3 - -5 -1 - -1 0 - -2 -1 - -3 0 - -4 2 - C : 0 0 0 sco O ; 
+86 5197 N M 0 15 - 3 3 - 65 18 - 3 -2 - 0 -18 - 0 -1 - -5 -10 - 0 25 - -31 -8 - 0 -15 - -3 -8 - -2 22 - -25 -7 - 0 -13 - 0 -11 - -2 2 - -3 8 - C : 0 0 0 sco O ; 
+146 5183 N M 1 2 - 2 1 - 1 0 - 5 -2 - 2 -5 - 0 -8 - -1 -4 - -2 -4 - -2 14 - -1 3 - -3 1 - -2 2 - C : 0 0 0 sco O ; 
+109 5151 N M 2 8 - 2 -3 - 3 -1 - 8 2 - 4 2 - 1 5 - 0 5 - 1 2 - 2 1 - 1 0 - 1 -2 - 0 -5 - 2 -3 - 3 -1 - 8 2 - 3 3 - 2 4 - 0 7 - 2 -14 - -7 -5 - -8 -2 - -7 1 - -4 -3 - -4 -2 - -8 -2 - -7 1 - C : 0 0 0 sco O ; 
+106 5158 N M 0 5 - 2 6 - 5 5 - 1 0 - 2 0 - 1 -1 - -1 -2 - -1 -1 - -3 -3 - -1 -3 - 0 -5 - -2 -8 - -3 7 - C : 0 0 0 sco O ; 
+152 5116 N M 1 6 - 2 -2 - 2 -2 - 0 -1 - -1 -1 - -2 -2 - -2 2 - C : 0 0 0 sco O ; 
+109 5135 N M 7 5 - 31 8 - 7 -1 - 3 -7 - 0 -10 - -4 -8 - -1 -6 - 0 23 - -2 3 - -3 1 - -31 -8 - -3 -3 - -2 -4 - 0 -15 - -2 22 - C : 0 0 0 sco O ; 
+106 5109 N M 0 18 - 3 8 - 2 -22 - 36 10 - 3 2 - 2 4 - 0 10 - 0 -23 - -2 2 - -3 0 - -38 -11 - -3 2 - C : 0 0 0 sco O ; 
+109 5062 N M 8 7 - 37 10 - 2 0 - 1 -2 - -1 -2 - -2 -1 - -45 -12 - C : 0 0 0 sco O ; 
+109 5097 N M 45 13 - 2 -1 - 1 -1 - -1 -2 - -2 -2 - -37 -9 - -8 2 - C : 0 0 0 sco O ; 
+106 5094 N M 1 2 - 2 1 - 8 -2 - 16 -7 - -6 -3 - -20 7 - 0 1 - -1 1 - C : 0 0 0 sco O ; 
+106 5064 N M 1 2 - 20 19 - 6 3 - 1 -1 - -1 -3 - -16 -15 - -8 -7 - -2 1 - -1 1 - C : 0 0 0 sco O ; 
+152 5061 N M 0 -2 - 2 0 - 2 1 - 1 2 - -1 2 - -2 0 - -1 -1 - -1 -2 - C : 0 0 0 sco O ; 
+106 5004 N M 1 1 - 2 2 - 38 10 - 7 -1 - -2 -8 - -2 3 - -3 1 - -38 -10 - -2 0 - -1 2 - C : 0 0 0 sco O ; 
+106 4978 N M 1 2 - 2 2 - 43 11 - 0 15 - 2 8 - 3 -7 - 0 -17 - -3 -3 - -45 -13 - -2 1 - -1 1 - C : 0 0 0 sco O ; 
+106 4938 N M 1 2 - 2 1 - 20 6 - 0 20 - 5 -19 - 20 5 - 2 0 - 1 -1 - -1 -2 - -2 -2 - -45 -12 - -2 0 - -1 2 - C : 0 0 0 sco O ; 
+106 4963 N M 1 2 - 2 1 - 45 13 - 2 -1 - 1 -1 - -1 -2 - -2 -1 - -20 -6 - 0 -20 - -5 19 - -20 -6 - -2 1 - -1 1 - C : 0 0 0 sco O ; 
+109 4899 N M 2 8 - 2 -4 - 3 0 - 31 8 - 3 2 - 2 4 - 0 10 - 2 8 - 3 -6 - 0 -10 - -3 -8 - -7 -5 - -31 -8 - -7 1 - C : 0 0 0 sco O ; 
+89 4918 N M 7 5 - 20 5 - 31 8 - 7 -1 - -2 -8 - -2 4 - -3 0 - -31 -8 - -3 -2 - -2 -4 - 0 -10 - -2 -8 - -3 6 - 0 7 - 0 8 - -10 -2 - -3 -3 - -2 -4 - -2 7 - C : 0 0 0 sco O ; 
+86 4910 N M 3 8 - 2 -7 - 2 -3 - 3 0 - 2 1 - 1 1 - 1 0 - 4 6 - 2 4 - 0 -8 - -2 -3 - -1 -2 - -4 -3 - -1 -1 - -2 0 - -7 1 - -3 6 - C : 0 0 0 sco O ; 
+152 4895 N M 0 -2 - 2 0 - 2 1 - 1 2 - -1 2 - -2 0 - -1 -1 - -1 -2 - C : 0 0 0 sco O ; 
+89 4835 N M 65 18 - 2 -1 - 1 -1 - -1 -2 - -2 -1 - -54 -15 - -11 2 - C : 0 0 0 sco O ; 
+89 4792 N M 7 5 - 15 4 - 8 -1 - 2 -7 - -2 -7 - -3 6 - -1 3 - -4 1 - -15 -4 - -3 -3 - -2 -4 - -2 7 - C : 0 0 0 sco O ; 
+86 4832 N M 1 2 - 2 1 - 11 -2 - 55 -11 - 1 0 - 1 -1 - -1 -2 - -2 -2 - -11 2 - -55 11 - -2 1 - 0 1 - C : 0 0 0 sco O ; 
+86 4784 N M 3 8 - 2 -7 - 2 -3 - 3 0 - 15 4 - 4 2 - 1 4 - 3 -6 - -8 -5 - -15 -4 - -7 1 - -3 6 - C : 0 0 0 sco O ; 
+86 4802 N M 1 2 - 2 1 - 54 14 - 11 -2 - -65 -17 - -2 0 - -1 2 - C : 0 0 0 sco O ; 
+72 5308 N M 0 6 - -4 -1 - -2 -3 - 0 -4 - 2 -3 - 4 -2 - 0 7 - C : 0 0 0 sco O ; 
+72 5301 N M 0 7 - 0 6 - 282 0 - 0 -6 - 0 -7 - -282 0 - C : 0 0 0 sco O ; 
+354 5308 N M 0 -7 - 4 2 - 2 3 - 0 4 - -2 3 - -4 1 - 0 -6 - C : 0 0 0 sco O ; 
+72 4720 N M 0 6 - -4 -1 - -2 -3 - 0 -4 - 2 -3 - 4 -2 - 0 7 - C : 0 0 0 sco O ; 
+72 4713 N M 0 7 - 0 6 - 282 0 - 0 -6 - 0 -7 - -282 0 - C : 0 0 0 sco O ; 
+354 4720 N M 0 -7 - 4 2 - 2 3 - 0 4 - -2 3 - -4 1 - 0 -6 - C : 0 0 0 sco O ; 
+88 4591 N M 12 8 - 54 15 - 2 -1 - 0 -1 - 0 -2 - -2 -1 - -66 -18 - C : 0 0 0 sco O ; 
+86 4623 N M 1 2 - 1 1 - 66 18 - -12 -8 - -54 -15 - -2 1 - 0 1 - C : 0 0 0 sco O ; 
+85 4593 N M 2 3 - 55 40 - 12 8 - 2 0 - 1 -2 - -2 -3 - -55 -40 - -12 -8 - -2 0 - -1 2 - C : 0 0 0 sco O ; 
+106 4558 N M 1 2 - 2 1 - 20 6 - 0 20 - 5 -19 - 20 5 - 2 0 - 1 -1 - -1 -2 - -2 -2 - -45 -12 - -2 1 - -1 1 - C : 0 0 0 sco O ; 
+106 4583 N M 1 2 - 2 2 - 45 12 - 2 -1 - 1 -1 - -1 -2 - -2 -1 - -20 -6 - 0 -20 - -5 19 - -20 -6 - -2 1 - -1 1 - C : 0 0 0 sco O ; 
+109 4519 N M 2 8 - 2 -3 - 3 -1 - 31 8 - 3 3 - 2 4 - 0 10 - 2 7 - 3 -6 - 0 -10 - -3 -8 - -7 -5 - -31 -8 - -7 1 - C : 0 0 0 sco O ; 
+89 4538 N M 7 5 - 20 5 - 31 8 - 7 -1 - -2 -7 - -2 3 - -3 0 - -31 -8 - -3 -2 - -2 -4 - 0 -10 - -2 -8 - -3 6 - 0 7 - 0 9 - -10 -3 - -3 -3 - -2 -4 - -2 7 - C : 0 0 0 sco O ; 
+86 4530 N M 3 8 - 2 -7 - 2 -3 - 3 0 - 2 1 - 1 1 - 1 1 - 4 5 - 2 5 - 0 -9 - -2 -3 - -1 -2 - -4 -3 - -1 -1 - -2 0 - -7 1 - -3 6 - C : 0 0 0 sco O ; 
+152 4515 N M 0 -2 - 2 0 - 2 1 - 1 2 - -1 2 - -2 0 - -1 -1 - -1 -2 - C : 0 0 0 sco O ; 
+89 4455 N M 65 18 - 2 -1 - 1 -1 - -1 -2 - -2 -1 - -54 -15 - -11 2 - C : 0 0 0 sco O ; 
+89 4412 N M 7 5 - 15 4 - 8 -1 - 2 -6 - -2 -8 - -3 6 - -1 3 - -4 1 - -15 -4 - -3 -3 - -2 -4 - -2 7 - C : 0 0 0 sco O ; 
+86 4452 N M 1 2 - 2 1 - 11 -2 - 55 -10 - 1 -1 - 1 -1 - -1 -2 - -2 -2 - -11 2 - -55 11 - -2 1 - 0 1 - C : 0 0 0 sco O ; 
+86 4404 N M 3 8 - 2 -7 - 2 -3 - 3 0 - 15 4 - 4 2 - 1 4 - 3 -6 - -8 -5 - -15 -4 - -7 1 - -3 6 - C : 0 0 0 sco O ; 
+86 4422 N M 1 2 - 2 1 - 54 14 - 11 -2 - -65 -17 - -2 0 - -1 2 - C : 0 0 0 sco O ; 
+109 4357 N M 7 5 - 31 8 - 7 -1 - -2 -8 - -2 3 - -3 1 - -31 -8 - -3 -3 - -2 -4 - 0 -15 - -2 22 - C : 0 0 0 sco O ; 
+86 4334 N M 0 17 - 1 2 - 2 1 - 2 0 - 0 -1 - 0 -18 - 2 -3 - 3 -1 - 10 3 - 0 15 - 3 8 - 2 -22 - 36 10 - 3 2 - 2 4 - 0 10 - 2 8 - 3 -6 - 0 -10 - -3 -8 - -7 -5 - -51 -14 - -7 1 - -3 7 - C : 0 0 0 sco O ; 
+106 4291 N M 1 2 - 2 1 - 43 12 - 0 15 - 2 8 - 3 -7 - 0 -15 - 10 3 - 3 2 - 2 4 - 0 15 - 1 2 - 1 2 - 2 -1 - 1 -1 - 0 -15 - -3 -8 - -7 -5 - -58 -16 - -2 1 - -1 1 - C : 0 0 0 sco O ; 
+106 4316 N M 1 2 - 2 2 - 38 10 - 7 -1 - -2 -8 - -2 3 - -3 1 - -38 -10 - -2 0 - -1 1 - C : 0 0 0 sco O ; 
+109 4252 N M 2 8 - 2 -3 - 3 -1 - 31 8 - 3 3 - 2 4 - 0 10 - 2 7 - 3 -6 - 0 -10 - -3 -8 - -7 -5 - -31 -8 - -7 1 - C : 0 0 0 sco O ; 
+86 4245 N M 0 26 - 1 2 - 1 1 - 1 0 - 2 0 - 15 -12 - 0 6 - 3 8 - 7 5 - 31 8 - 7 -1 - -2 -7 - -2 3 - -3 0 - -31 -8 - -3 -2 - -2 -4 - 0 -10 - -2 -8 - -18 14 - 0 -19 - -1 -2 - -1 -1 - -2 0 - -1 1 - C : 0 0 0 sco O ; 
+109 4209 N M 2 5 - 43 12 - 2 0 - 1 -2 - -1 -2 - -2 -1 - -45 -12 - C : 0 0 0 sco O ; 
+106 4211 N M 0 15 - 2 3 - 46 22 - 2 0 - 1 -2 - -2 -3 - -44 -21 - 0 -11 - -2 -5 - -3 2 - C : 0 0 0 sco O ; 
+152 4208 N M 0 -2 - 2 0 - 2 1 - 1 2 - -1 2 - -2 0 - -1 -1 - -1 -2 - C : 0 0 0 sco O ; 
+1717 6681 N M -5 2 - -1 3 - 0 1 - 2 1 - 2 -1 - 1 -1 - 1 -5 - C : 0 0 0 sco O ; 
+1730 6615 N M -6 3 - -16 60 - -20 0 - -5 0 - -3 0 - -3 3 - -1 5 - 0 1 - 2 1 - 2 -1 - 1 -1 - 1 -3 - 30 0 - 5 -2 - -1 -3 - -3 0 - 17 -63 - C : 0 0 0 sco O ; 
+1728 6613 N M -20 0 - -1 0 - -1 0 - -1 2 - -22 63 - 5 0 - 21 -60 - 15 0 - 6 -3 - -2 -2 - C : 0 0 0 sco O ; 
+1762 6678 N M -7 2 - 2 2 - 2 1 - 1 0 - 2 0 - 1 -2 - -1 -3 - C : 0 0 0 sco O ; 
+1742 6636 N M -4 7 - -8 30 - 1 7 - 6 3 - 10 0 - 8 -3 - 7 -2 - -24 0 - -3 -1 - 0 -4 - 8 -30 - 2 -4 - 4 -1 - 15 0 - -22 -2 - C : 0 0 0 sco O ; 
+1768 6633 N M -18 0 - -8 3 - 22 2 - -9 35 - -3 4 - -4 1 - -10 0 - 24 0 - -2 -2 - 0 -3 - 10 -38 - -2 -2 - C : 0 0 0 sco O ; 
+1805 6638 N M -6 0 - -11 43 - 0 2 - 2 0 - 2 0 - 1 -2 - 12 -43 - C : 0 0 0 sco O ; 
+1822 6636 N M -7 2 - 3 1 - 0 4 - -10 38 - 0 2 - 2 0 - 2 0 - 1 -2 - 10 -38 - -1 -7 - C : 0 0 0 sco O ; 
+1816 6633 N M -33 0 - -3 2 - -12 46 - 0 2 - 2 0 - 2 0 - 1 -2 - 11 -43 - 15 0 - 6 0 - 10 0 - 7 -2 - -6 -3 - C : 0 0 0 sco O ; 
+1858 6678 N M -7 2 - 2 2 - 2 1 - 1 0 - 2 0 - 1 -2 - -1 -3 - C : 0 0 0 sco O ; 
+1838 6636 N M -5 7 - -8 30 - 1 7 - 7 3 - 10 0 - 8 -3 - 7 -2 - -24 0 - -3 -1 - -1 -4 - 8 -30 - 3 -4 - 4 -1 - 15 0 - -22 -2 - C : 0 0 0 sco O ; 
+1864 6633 N M -18 0 - -8 3 - 22 2 - -10 35 - -2 4 - -4 1 - -10 0 - 24 0 - -2 -2 - 0 -3 - 10 -38 - -2 -2 - C : 0 0 0 sco O ; 
+1882 6365 N M -6 0 - 1 -4 - 3 -2 - 4 0 - 3 2 - 2 4 - -7 0 - C : 0 0 0 sco O ; 
+1889 6365 N M -7 0 - -6 0 - 0 353 - 6 0 - 7 0 - 0 -353 - C : 0 0 0 sco O ; 
+1882 6718 N M 7 0 - -2 4 - -3 2 - -4 0 - -3 -2 - -1 -4 - 6 0 - C : 0 0 0 sco O ; 
+1647 6365 N M -6 0 - 1 -4 - 3 -2 - 4 0 - 3 2 - 2 4 - -7 0 - C : 0 0 0 sco O ; 
+1654 6365 N M -7 0 - -6 0 - 0 353 - 6 0 - 7 0 - 0 -353 - C : 0 0 0 sco O ; 
+1647 6718 N M 7 0 - -2 4 - -3 2 - -4 0 - -3 -2 - -1 -4 - 6 0 - C : 0 0 0 sco O ; 
+1294 6365 N M -6 0 - 1 -4 - 3 -2 - 4 0 - 3 2 - 2 4 - -7 0 - C : 0 0 0 sco O ; 
+1301 6365 N M -7 0 - -6 0 - 0 353 - 6 0 - 7 0 - 0 -353 - C : 0 0 0 sco O ; 
+1294 6718 N M 7 0 - -2 4 - -3 2 - -4 0 - -3 -2 - -1 -4 - 6 0 - C : 0 0 0 sco O ; 
+753 6365 N M -6 0 - 1 -4 - 3 -2 - 4 0 - 3 2 - 2 4 - -7 0 - C : 0 0 0 sco O ; 
+760 6365 N M -7 0 - -6 0 - 0 353 - 6 0 - 7 0 - 0 -353 - C : 0 0 0 sco O ; 
+753 6718 N M 7 0 - -2 4 - -3 2 - -4 0 - -3 -2 - -1 -4 - 6 0 - C : 0 0 0 sco O ; 
+886 6615 N M -17 66 - 0 2 - 2 0 - 2 0 - 1 -2 - 14 -54 - -2 -12 - C : 0 0 0 sco O ; 
+930 6615 N M -5 8 - -5 15 - 2 7 - 6 3 - 7 -3 - -6 -2 - -3 -1 - 0 -4 - 4 -15 - 2 -4 - 4 -1 - -6 -3 - C : 0 0 0 sco O ; 
+889 6613 N M -2 0 - -1 2 - 2 12 - 11 55 - 1 1 - 1 0 - 2 -1 - 1 -1 - -2 -12 - -11 -55 - 0 -1 - -2 0 - C : 0 0 0 sco O ; 
+937 6613 N M -7 2 - 6 3 - 3 1 - 1 4 - -4 15 - -3 4 - -4 1 - 6 2 - 6 -7 - 4 -15 - -1 -8 - -7 -2 - C : 0 0 0 sco O ; 
+920 6613 N M -2 0 - -2 2 - -14 54 - 2 12 - 18 -66 - -1 -2 - -1 0 - C : 0 0 0 sco O ; 
+984 6636 N M -4 7 - -9 30 - 2 7 - 7 -2 - -3 -1 - 0 -4 - 8 -30 - 2 -4 - 4 -1 - 15 0 - -22 -2 - C : 0 0 0 sco O ; 
+1008 6613 N M -18 0 - -2 1 - -1 1 - 0 2 - 2 1 - 17 0 - 4 1 - 0 4 - -3 10 - -15 0 - -8 3 - 22 2 - -9 35 - -3 4 - -4 1 - -10 0 - -7 2 - 6 3 - 10 0 - 8 -3 - 5 -7 - 13 -50 - -1 -7 - -6 -3 - C : 0 0 0 sco O ; 
+1025 6636 N M -5 7 - -8 30 - 1 7 - 8 -2 - -4 -1 - 0 -4 - 8 -30 - 2 -4 - 4 -1 - 10 0 - -16 -2 - C : 0 0 0 sco O ; 
+1043 6633 N M -10 0 - -8 3 - 16 2 - 4 1 - 0 4 - -8 30 - -2 4 - -4 1 - -10 0 - -8 2 - 6 3 - 10 0 - 8 -3 - 5 -7 - 8 -30 - -1 -7 - -6 -3 - C : 0 0 0 sco O ; 
+1065 6633 N M -2 1 - -1 1 - -12 46 - 0 2 - 2 0 - 2 0 - 1 -2 - 5 -17 - 7 -6 - -5 -1 - 5 -22 - 0 -2 - -2 0 - C : 0 0 0 sco O ; 
+1091 6633 N M -2 1 - -27 23 - 5 1 - 8 24 - 1 1 - 1 0 - 2 -1 - 1 -1 - 0 -2 - -9 -25 - 20 -17 - 2 -2 - -1 -1 - -1 -1 - C : 0 0 0 sco O ; 
+1131 6633 N M -2 1 - -1 1 - -12 43 - -15 0 - -8 2 - 7 3 - 15 0 - -3 10 - -2 4 - -4 1 - -15 0 - -2 1 - -1 2 - 0 1 - 1 1 - 16 0 - 7 -3 - 5 -7 - 16 -58 - -1 -2 - -1 0 - C : 0 0 0 sco O ; 
+1106 6633 N M -2 1 - -1 1 - -11 38 - 1 7 - 8 -2 - -3 -1 - -1 -4 - 11 -38 - -1 -2 - -1 0 - C : 0 0 0 sco O ; 
+1178 6635 N M -7 9 - -10 37 - 0 2 - 2 0 - 2 0 - 1 -2 - 12 -46 - C : 0 0 0 sco O ; 
+1143 6635 N M -12 46 - 0 2 - 2 0 - 1 0 - 2 -2 - 10 -37 - -3 -9 - C : 0 0 0 sco O ; 
+1146 6633 N M -2 0 - -1 2 - 3 9 - 6 15 - 4 -6 - -8 -19 - -1 -1 - -1 0 - C : 0 0 0 sco O ; 
+1176 6633 N M -2 1 - -18 19 - -4 6 - 2 2 - 2 -2 - 15 -15 - 7 -9 - 0 -2 - -2 0 - C : 0 0 0 sco O ; 
+1179 6678 N M 2 1 - 0 2 - -1 1 - -2 1 - -2 -1 - 0 -1 - 1 -2 - 2 -1 - C : 0 0 0 sco O ; 
+1439 6615 N M -6 3 - -17 63 - 0 2 - 2 0 - 2 0 - 1 -2 - 18 -66 - C : 0 0 0 sco O ; 
+1437 6613 N M -30 0 - -4 2 - -17 66 - 0 2 - 2 0 - 2 0 - 1 -2 - 17 -63 - 25 0 - 6 -3 - -2 -2 - C : 0 0 0 sco O ; 
+1446 6636 N M -5 7 - -8 30 - 1 7 - 8 -2 - -3 -1 - -1 -4 - 8 -30 - 3 -4 - 4 -1 - 10 0 - -17 -2 - C : 0 0 0 sco O ; 
+1464 6633 N M -10 0 - -8 3 - 17 2 - 3 1 - 1 4 - -9 30 - -2 4 - -4 1 - -10 0 - -8 2 - 7 3 - 10 0 - 8 -3 - 5 -7 - 8 -30 - -1 -7 - -7 -3 - C : 0 0 0 sco O ; 
+1487 6636 N M -5 7 - -8 30 - 1 7 - 7 -2 - -3 -1 - 0 -4 - 8 -30 - 2 -4 - 4 -1 - 15 0 - -21 -2 - C : 0 0 0 sco O ; 
+1510 6613 N M -18 0 - -2 1 - -1 1 - 0 2 - 2 1 - 18 0 - 3 1 - 0 4 - -2 10 - -15 0 - -8 3 - 21 2 - -9 35 - -3 4 - -4 1 - -10 0 - -7 2 - 6 3 - 10 0 - 8 -3 - 5 -7 - 13 -50 - -1 -7 - -6 -3 - C : 0 0 0 sco O ; 
+1551 6636 N M -8 2 - 4 1 - 0 4 - -10 38 - 0 2 - 2 0 - 2 0 - 1 -2 - 10 -38 - -1 -7 - C : 0 0 0 sco O ; 
+1545 6633 N M -18 0 - -3 2 - -12 46 - 0 2 - 2 0 - 2 0 - 1 -2 - 11 -43 - 15 0 - 8 -2 - -6 -3 - C : 0 0 0 sco O ; 
+1555 6678 N M 2 1 - 0 2 - -1 1 - -2 1 - -2 -1 - 0 -1 - 1 -2 - 2 -1 - C : 0 0 0 sco O ; 
+423 6615 N M -8 11 - -14 54 - 0 2 - 2 1 - 2 -1 - 1 -2 - 17 -65 - C : 0 0 0 sco O ; 
+391 6612 N M -2 1 - -1 2 - -17 65 - 8 -11 - 14 -54 - 0 -2 - -2 -1 - C : 0 0 0 sco O ; 
+422 6612 N M -3 2 - -40 55 - -8 11 - 0 2 - 1 1 - 3 -2 - 40 -55 - 8 -11 - 0 -2 - -1 -1 - C : 0 0 0 sco O ; 
+420 6673 N M -2 1 - -1 1 - 0 1 - 2 5 - 6 2 - 7 0 - 4 -1 - 4 -2 - -14 -2 - -3 -1 - -1 -2 - -2 -2 - C : 0 0 0 sco O ; 
+452 6636 N M -8 2 - 4 1 - 1 4 - -2 7 - -3 4 - -4 1 - -5 0 - -3 1 - -1 2 - 1 2 - 1 0 - 5 0 - 4 2 - 0 4 - -2 7 - -2 4 - -5 1 - -7 0 - 14 2 - 5 -7 - 2 -7 - -1 -8 - 4 -3 - 2 -5 - 2 -7 - -2 -7 - C : 0 0 0 sco O ; 
+446 6633 N M -5 0 - -7 2 - -5 5 - 0 1 - 0 1 - 2 1 - 1 0 - 2 -2 - 2 -2 - 3 -1 - 5 0 - 8 -2 - -6 -3 - C : 0 0 0 sco O ; 
+501 6635 N M -7 9 - -10 37 - 0 2 - 2 0 - 2 0 - 1 -2 - 12 -46 - C : 0 0 0 sco O ; 
+466 6635 N M -12 46 - 0 2 - 1 0 - 2 0 - 2 -2 - 9 -37 - -2 -9 - C : 0 0 0 sco O ; 
+469 6633 N M -2 0 - -1 2 - 2 9 - 7 15 - 3 -6 - -7 -19 - -1 -1 - -1 0 - C : 0 0 0 sco O ; 
+499 6633 N M -2 1 - -19 19 - -3 6 - 1 2 - 3 -2 - 15 -15 - 7 -9 - -1 -2 - -1 0 - C : 0 0 0 sco O ; 
+502 6678 N M 2 1 - 0 2 - -1 1 - -2 1 - -2 -1 - 0 -1 - 1 -2 - 2 -1 - C : 0 0 0 sco O ; 
+518 6365 N M -6 0 - 1 -4 - 3 -2 - 4 0 - 3 2 - 2 4 - -7 0 - C : 0 0 0 sco O ; 
+525 6365 N M -7 0 - -6 0 - 0 353 - 6 0 - 7 0 - 0 -353 - C : 0 0 0 sco O ; 
+518 6718 N M 7 0 - -2 4 - -3 2 - -4 0 - -3 -2 - -1 -4 - 6 0 - C : 0 0 0 sco O ; 
+88 6589 N M 12 8 - 54 15 - 2 -1 - 0 -1 - 0 -2 - -2 -1 - -66 -18 - C : 0 0 0 sco O ; 
+86 6621 N M 1 2 - 1 1 - 66 18 - -12 -8 - -54 -15 - -2 1 - 0 1 - C : 0 0 0 sco O ; 
+85 6591 N M 2 3 - 55 40 - 12 8 - 2 0 - 1 -2 - -2 -3 - -55 -40 - -12 -8 - -2 0 - -1 2 - C : 0 0 0 sco O ; 
+106 6556 N M 1 2 - 2 1 - 20 6 - 0 20 - 5 -19 - 20 6 - 2 -1 - 1 -1 - -1 -2 - -2 -1 - -45 -13 - -2 1 - -1 1 - C : 0 0 0 sco O ; 
+106 6581 N M 1 2 - 2 2 - 45 12 - 2 -1 - 1 -1 - -1 -2 - -2 -1 - -20 -6 - 0 -20 - -5 19 - -20 -5 - -2 0 - -1 1 - C : 0 0 0 sco O ; 
+109 6517 N M 2 8 - 2 -3 - 3 -1 - 31 8 - 3 3 - 2 4 - 0 10 - 2 7 - 3 -6 - 0 -10 - -3 -8 - -7 -5 - -31 -8 - -7 1 - C : 0 0 0 sco O ; 
+89 6536 N M 7 5 - 20 5 - 31 8 - 7 -1 - -2 -7 - -2 3 - -3 0 - -31 -8 - -3 -2 - -2 -4 - 0 -10 - -2 -8 - -3 7 - 0 6 - 0 9 - -10 -3 - -3 -3 - -2 -4 - -2 7 - C : 0 0 0 sco O ; 
+86 6528 N M 3 8 - 2 -7 - 2 -3 - 3 0 - 2 1 - 1 1 - 1 1 - 4 5 - 2 5 - 0 -9 - -2 -2 - -1 -3 - -4 -3 - -1 -1 - -2 0 - -7 1 - -3 6 - C : 0 0 0 sco O ; 
+152 6513 N M 0 -2 - 2 0 - 2 1 - 1 2 - -1 2 - -2 0 - -1 -1 - -1 -2 - C : 0 0 0 sco O ; 
+89 6453 N M 65 18 - 2 0 - 1 -2 - -1 -2 - -2 -1 - -54 -15 - -11 2 - C : 0 0 0 sco O ; 
+89 6410 N M 7 5 - 15 4 - 8 -1 - 2 -6 - -2 -8 - -3 6 - -1 3 - -4 1 - -15 -4 - -3 -3 - -2 -3 - -2 6 - C : 0 0 0 sco O ; 
+86 6450 N M 1 2 - 2 1 - 11 -2 - 55 -10 - 1 -1 - 1 -1 - -1 -2 - -2 -1 - -11 2 - -55 10 - -2 1 - 0 1 - C : 0 0 0 sco O ; 
+86 6402 N M 3 8 - 2 -6 - 2 -4 - 3 0 - 15 4 - 4 3 - 1 3 - 3 -6 - -8 -5 - -15 -4 - -7 1 - -3 6 - C : 0 0 0 sco O ; 
+86 6420 N M 1 2 - 2 1 - 54 15 - 11 -2 - -65 -18 - -2 0 - -1 2 - C : 0 0 0 sco O ; 
+109 6331 N M 2 7 - 2 -3 - 3 0 - 38 10 - 2 0 - 1 -2 - -1 -2 - -2 -1 - -38 -10 - -7 1 - C : 0 0 0 sco O ; 
+106 6337 N M 0 18 - 3 3 - 45 12 - 2 0 - 1 -2 - -1 -2 - -2 -1 - -43 -11 - 0 -16 - -2 -7 - -3 6 - C : 0 0 0 sco O ; 
+109 6315 N M 7 5 - 31 8 - 7 -1 - -2 -8 - -2 3 - -3 1 - -31 -8 - -3 -3 - -2 -4 - 0 -10 - -2 17 - C : 0 0 0 sco O ; 
+106 6297 N M 0 10 - 3 8 - 2 -17 - 2 -3 - 3 -1 - 31 9 - 3 2 - 2 4 - 0 10 - 2 8 - 3 -7 - 0 -10 - -3 -8 - -7 -4 - -31 -9 - -7 1 - -3 7 - C : 0 0 0 sco O ; 
+109 6275 N M 7 4 - 31 8 - 7 -1 - -2 -7 - -2 3 - -3 0 - -31 -8 - -3 -2 - -2 -4 - 0 -15 - -2 22 - C : 0 0 0 sco O ; 
+86 6251 N M 0 18 - 1 2 - 2 1 - 2 0 - 0 -2 - 0 -17 - 2 -4 - 3 0 - 10 2 - 0 16 - 3 8 - 2 -22 - 36 9 - 3 3 - 2 4 - 0 10 - 2 7 - 3 -6 - 0 -10 - -3 -8 - -7 -5 - -51 -13 - -7 1 - -3 6 - C : 0 0 0 sco O ; 
+109 6207 N M 2 6 - 43 11 - 2 0 - 1 -2 - -1 -2 - -2 -1 - -45 -12 - C : 0 0 0 sco O ; 
+106 6209 N M 0 15 - 2 3 - 46 22 - 2 0 - 1 -2 - -2 -3 - -44 -21 - 0 -10 - -2 -6 - -3 2 - C : 0 0 0 sco O ; 
+152 6206 N M 0 -2 - 2 0 - 2 1 - 1 2 - -1 2 - -2 0 - -1 -1 - -1 -2 - C : 0 0 0 sco O ; 
+354 6718 N M 0 -7 - 4 2 - 2 3 - 0 4 - -2 3 - -4 1 - 0 -6 - C : 0 0 0 sco O ; 
+354 6724 N M 0 -6 - 0 -7 - -282 0 - 0 7 - 0 6 - 282 0 - C : 0 0 0 sco O ; 
+72 6718 N M 0 6 - -4 -1 - -2 -3 - 0 -4 - 2 -3 - 4 -2 - 0 7 - C : 0 0 0 sco O ; 
+72 6130 N M 0 6 - -4 -1 - -2 -3 - 0 -4 - 2 -3 - 4 -2 - 0 7 - C : 0 0 0 sco O ; 
+72 6123 N M 0 7 - 0 6 - 282 0 - 0 -6 - 0 -7 - -282 0 - C : 0 0 0 sco O ; 
+354 6130 N M 0 -7 - 4 2 - 2 3 - 0 4 - -2 3 - -4 1 - 0 -6 - C : 0 0 0 sco O ; 
+354 6600 N M 0 6 - -4 -1 - -2 -3 - 0 -4 - 2 -3 - 4 -2 - 0 7 - C : 0 0 0 sco O ; 
+354 6593 N M 0 7 - 0 6 - 1528 0 - 0 -6 - 0 -7 - -1528 0 - C : 0 0 0 sco O ; 
+1882 6600 N M 0 -7 - 4 2 - 2 3 - 0 4 - -2 3 - -4 1 - 0 -6 - C : 0 0 0 sco O ; 
+354 6483 N M 1528 0 - 6 Lw 1 Lc 1 Lj solid 0 0 0 sco K 
+607 6615 N M -6 3 - -17 63 - 0 2 - 2 0 - 2 0 - 1 -2 - 18 -66 - C : 0 0 0 sco O ; 
+605 6613 N M -15 0 - -3 1 - -38 66 - 0 1 - 0 1 - 2 1 - 3 -2 - 36 -63 - 11 0 - 6 -3 - -2 -2 - C : 0 0 0 sco O ; 
+615 6633 N M -2 1 - -2 1 - -10 38 - 1 7 - 8 -2 - -3 -1 - -1 -4 - 10 -38 - 0 -2 - -1 0 - C : 0 0 0 sco O ; 
+640 6633 N M -2 1 - -1 1 - -12 43 - -15 0 - -8 2 - 7 3 - 17 0 - 3 -2 - 13 -46 - -1 -2 - -1 0 - C : 0 0 0 sco O ; 
+680 6633 N M -18 0 - -8 3 - -4 7 - -8 30 - 1 7 - 6 3 - 18 0 - 2 -1 - 1 -1 - -1 -2 - -1 -1 - -18 0 - -3 -1 - 0 -4 - 8 -30 - 2 -4 - 4 -1 - 18 0 - 2 -1 - 1 -2 - 0 -1 - -2 -1 - C : 0 0 0 sco O ; 
+716 6638 N M -5 0 - -11 43 - 0 2 - 2 0 - 2 0 - 1 -2 - 11 -43 - C : 0 0 0 sco O ; 
+734 6636 N M -7 2 - 3 1 - 0 4 - -10 38 - 0 2 - 2 0 - 2 0 - 1 -2 - 10 -38 - -1 -7 - C : 0 0 0 sco O ; 
+728 6633 N M -33 0 - -3 2 - -12 46 - 0 2 - 2 0 - 2 0 - 1 -2 - 11 -43 - 15 0 - 5 0 - 11 0 - 7 -2 - -6 -3 - C : 0 0 0 sco O ; 
+354 42 N M -6 0 - 1 -4 - 3 -2 - 4 0 - 3 2 - 2 4 - -7 0 - C : 0 0 0 sco O ; 
+361 42 N M -7 0 - -6 0 - 0 6676 - 6 0 - 7 0 - 0 -6676 - C : 0 0 0 sco O ; 
+354 6718 N M 7 0 - -2 4 - -3 2 - -4 0 - -3 -2 - -1 -4 - 6 0 - C : 0 0 0 sco O ; 
+189 6718 N M 7 0 - -2 4 - -3 2 - -4 0 - -3 -2 - -1 -4 - 6 0 - C : 0 0 0 sco O ; 
+183 6718 N M 6 0 - 7 0 - 0 -3409 - -7 0 - -6 0 - 0 3409 - C : 0 0 0 sco O ; 
+189 3309 N M -6 0 - 1 -4 - 3 -2 - 4 0 - 3 2 - 2 4 - -7 0 - C : 0 0 0 sco O ; 
+72 6718 N M 7 0 - -2 4 - -3 2 - -4 0 - -3 -2 - -1 -4 - 6 0 - C : 0 0 0 sco O ; 
+66 6718 N M 6 0 - 7 0 - 0 -3409 - -7 0 - -6 0 - 0 3409 - C : 0 0 0 sco O ; 
+72 3309 N M -6 0 - 1 -4 - 3 -2 - 4 0 - 3 2 - 2 4 - -7 0 - C : 0 0 0 sco O ; 
+89 5889 N M 2 6 - 63 17 - 2 -1 - 1 -1 - -1 -2 - -2 -1 - -65 -18 - C : 0 0 0 sco O ; 
+86 5891 N M 0 30 - 3 3 - 65 18 - 2 0 - 1 -2 - -1 -2 - -2 -1 - -63 -17 - 0 -25 - -2 -6 - -3 2 - C : 0 0 0 sco O ; 
+109 5882 N M 7 5 - 31 8 - 7 -1 - -2 -8 - -2 3 - -3 1 - -31 -8 - -3 -3 - -2 -4 - 0 -10 - -2 17 - C : 0 0 0 sco O ; 
+106 5864 N M 0 10 - 3 8 - 2 -17 - 2 -3 - 3 -1 - 31 8 - 3 3 - 2 4 - 0 10 - 2 8 - 3 -7 - 0 -10 - -3 -8 - -7 -5 - -31 -8 - -7 1 - -3 7 - C : 0 0 0 sco O ; 
+109 5841 N M 7 5 - 31 8 - 7 -1 - -2 -7 - -2 3 - -3 0 - -31 -8 - -3 -2 - -2 -4 - 0 -15 - -2 21 - C : 0 0 0 sco O ; 
+86 5818 N M 0 18 - 1 2 - 2 1 - 2 0 - 0 -2 - 0 -18 - 2 -3 - 3 0 - 10 2 - 0 15 - 3 8 - 2 -21 - 36 9 - 3 3 - 2 4 - 0 10 - 2 7 - 3 -6 - 0 -10 - -3 -8 - -7 -5 - -51 -13 - -7 1 - -3 6 - C : 0 0 0 sco O ; 
+109 5777 N M 2 7 - 2 -3 - 3 0 - 38 10 - 2 0 - 1 -2 - -1 -2 - -2 -1 - -38 -10 - -7 1 - C : 0 0 0 sco O ; 
+106 5783 N M 0 18 - 3 3 - 45 12 - 2 0 - 1 -2 - -1 -2 - -2 -1 - -43 -11 - 0 -16 - -2 -7 - -3 6 - C : 0 0 0 sco O ; 
+152 5773 N M 0 -2 - 2 0 - 2 1 - 1 2 - -1 2 - -2 0 - -1 -1 - -1 -2 - C : 0 0 0 sco O ; 
+106 5715 N M 1 2 - 2 1 - 38 10 - 7 -1 - -2 -7 - -2 3 - -3 0 - -38 -10 - -2 1 - -1 1 - C : 0 0 0 sco O ; 
+106 5690 N M 1 2 - 2 1 - 43 12 - 0 15 - 2 7 - 3 -6 - 0 -18 - -3 -3 - -45 -12 - -2 0 - -1 2 - C : 0 0 0 sco O ; 
+109 5645 N M 7 5 - 31 8 - 7 -1 - -2 -8 - -2 3 - -3 1 - -31 -8 - -3 -3 - -2 -4 - 0 -15 - -2 22 - C : 0 0 0 sco O ; 
+86 5622 N M 0 17 - 1 2 - 2 1 - 2 0 - 0 -1 - 0 -18 - 2 -3 - 3 -1 - 10 3 - 0 15 - 3 8 - 2 -22 - 36 10 - 3 2 - 2 4 - 0 10 - 2 8 - 3 -7 - 0 -9 - -3 -9 - -7 -4 - -51 -14 - -7 1 - -3 7 - C : 0 0 0 sco O ; 
+152 5585 N M 1 7 - 2 -2 - 2 -2 - 0 -1 - -1 -2 - -2 -1 - -2 1 - C : 0 0 0 sco O ; 
+109 5605 N M 7 5 - 31 8 - 7 -1 - 3 -7 - 0 -10 - -4 -8 - -1 -7 - 0 24 - -2 3 - -3 1 - -31 -9 - -3 -2 - -2 -4 - 0 -15 - -2 22 - C : 0 0 0 sco O ; 
+106 5579 N M 0 18 - 3 8 - 2 -22 - 36 9 - 3 3 - 2 4 - 0 10 - 0 -24 - -2 2 - -3 0 - -38 -10 - -3 2 - C : 0 0 0 sco O ; 
+111 5543 N M 0 5 - 43 11 - 2 0 - 1 -2 - -1 -2 - -2 -1 - -43 -11 - C : 0 0 0 sco O ; 
+109 5525 N M 2 8 - 2 -4 - 3 0 - 38 10 - 2 0 - 1 -2 - -1 -2 - -2 -1 - -38 -10 - -7 1 - C : 0 0 0 sco O ; 
+106 5531 N M 0 33 - 3 3 - 45 12 - 2 0 - 1 -2 - -1 -1 - -2 -2 - -43 -11 - 0 -15 - 0 -5 - 0 -10 - -2 -8 - -3 6 - C : 0 0 0 sco O ; 
+152 5490 N M 1 6 - 2 -2 - 2 -2 - -1 -2 - -2 -2 - -2 2 - C : 0 0 0 sco O ; 
+109 5509 N M 7 5 - 31 8 - 7 -1 - 3 -6 - 0 -11 - -4 -8 - -1 -6 - 0 23 - -2 3 - -3 1 - -31 -8 - -3 -3 - -2 -4 - 0 -15 - -2 22 - C : 0 0 0 sco O ; 
+106 5483 N M 0 18 - 3 8 - 2 -22 - 36 10 - 3 2 - 2 4 - 0 10 - 0 -23 - -2 2 - -3 0 - -38 -10 - -3 1 - C : 0 0 0 sco O ; 
+4703 42 N M 0 -7 - 4 2 - 2 3 - 0 4 - -2 3 - -4 1 - 0 -6 - C : 0 0 0 sco O ; 
+4703 48 N M 0 -6 - 0 -7 - -4349 0 - 0 7 - 0 6 - 4349 0 - C : 0 0 0 sco O ; 
+354 42 N M 0 6 - -4 -1 - -2 -3 - 0 -4 - 2 -3 - 4 -2 - 0 7 - C : 0 0 0 sco O ; 
+354 6718 N M 0 6 - -4 -1 - -2 -3 - 0 -4 - 2 -3 - 4 -2 - 0 7 - C : 0 0 0 sco O ; 
+354 6711 N M 0 7 - 0 6 - 4349 0 - 0 -6 - 0 -7 - -4349 0 - C : 0 0 0 sco O ; 
+4703 6718 N M 0 -7 - 4 2 - 2 3 - 0 4 - -2 3 - -4 1 - 0 -6 - C : 0 0 0 sco O ; 
+354 6365 N M 0 6 - -4 -1 - -2 -3 - 0 -4 - 2 -3 - 4 -2 - 0 7 - C : 0 0 0 sco O ; 
+354 6358 N M 0 7 - 0 6 - 4349 0 - 0 -6 - 0 -7 - -4349 0 - C : 0 0 0 sco O ; 
+4703 6365 N M 0 -7 - 4 2 - 2 3 - 0 4 - -2 3 - -4 1 - 0 -6 - C : 0 0 0 sco O ; 
+LH 
+pagesave restore
+
+%(%%[ Page: 1 ]%%)  =
+%%PageTrailer
+
+%%Trailer
+%%DocumentNeededFonts: 
+%%DocumentSuppliedFonts: 
+%Pscript_Win_Driver_Incr dup /terminate get exec
+%savelevel0 restore 
+%%Pages: 1
+%(%%[ LastPage ]%%)  =
+%%EOF
