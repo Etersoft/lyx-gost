@@ -3,7 +3,7 @@
 
 Name: lyx-gost
 Version: 1.3.1
-Release: alt1
+Release: alt2
 
 Summary: The GOST class files for LyX in koi8-r encoding
 Summary(ru_RU.KOI8-R): Класс текста GOST для LyX в кодировке koi8-r
@@ -90,10 +90,10 @@ for TARENC in %ENC1 %ENC2; do
 		iconv -f %ENC1 -t $TARENC "$f" | sed -e "s/koi8-r/$TARENC/g" >"$RPM_BUILD_ROOT/%_datadir/lyx/templates/`basename $f .lyx`-$TARENC.lyx"
 	done
 
-	mkdir -p $RPM_BUILD_ROOT%_datadir/doc/%name-$TARENC-%version
+	mkdir -p $RPM_BUILD_ROOT%_datadir/doc/%name-$TARENC
 	cd doc
 	for f in *;	do
-		iconv -f %ENC1 -t $TARENC "$f" >"$RPM_BUILD_ROOT/%_datadir/doc/%name-$TARENC-%version/$f"
+		iconv -f %ENC1 -t $TARENC <"$f" >"$RPM_BUILD_ROOT/%_datadir/doc/%name-$TARENC/$f"
 	done
 	cd -
 done
@@ -125,7 +125,7 @@ cd %prefix/share/lyx
 ./configure --srcdir
 
 %files %ENC1
-%doc doc/*
+%doc %_datadir/doc/%name-%ENC1
 %_datadir/lyx/layouts/*-%ENC1.inc
 %_datadir/lyx/layouts/gost.layout
 %_datadir/lyx/clipart/*
@@ -133,7 +133,7 @@ cd %prefix/share/lyx
 
 
 %files %ENC2
-%doc doc/*
+%doc %_datadir/doc/%name-%ENC2
 %_datadir/lyx/layouts/*-%ENC2.inc
 %_datadir/lyx/layouts/gost.layout
 %_datadir/lyx/clipart/*
@@ -141,6 +141,10 @@ cd %prefix/share/lyx
 
 
 %changelog
+* Tue May 13 2003 Vitaly Lipatov <lav@altlinux.ru> 1.3.1-alt2
+- fixed encoding for docs in cp1251
+- fixed name of docs dir
+
 * Mon Mar 31 2003 Vitaly Lipatov <lav@altlinux.ru> 1.3.1-alt1
 - updated for LyX 1.3.1
 - new version of lyx-gost (see ChangeLog)
