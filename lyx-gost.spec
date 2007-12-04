@@ -1,9 +1,9 @@
 Name: lyx-gost
-Version: 1.3.5
-Release: alt2
+Version: 1.5.0
+Release: alt1
 
-Summary: The GOST class files for LyX in koi8-r encoding
-Summary(ru_RU.KOI8-R): Класс документа по ГОСТ для LyX в кодировке koi8-r
+Summary: The GOST class files for LyX
+Summary(ru_RU.KOI8-R): Класс документа по ГОСТ для LyX
 
 License: GPL
 Group: Office
@@ -15,10 +15,13 @@ Source: %name-%version.tar.bz2
 
 BuildArchitectures: noarch
 BuildPreReq: iconv
-PreReq: lyx >= 1.3.4
+PreReq: lyx >= 1.5.0
 
-%define ENC1 koi8-r
-%define ENC2 cp1251
+Conflicts: lyx-gost-cp1251
+Obsoletes: lyx-gost-cp1251
+
+Conflicts: lyx-gost-koi8-r
+Obsoletes: lyx-gost-koi8-r
 
 %description
 The %name package contains the LyX/LaTeX class for preparing documents
@@ -29,121 +32,37 @@ according to Russian GOST's demands.
 подготовки технической текстовой документации в соответствии
 с ГОСТ 2.105-95 (с рамками и основными надписями).
 
-%package %ENC1
-Summary: The GOST class files for LyX in koi8-r encoding
-Summary(ru_RU.KOI8-R): Класс документа по ГОСТ для LyX в кодировке koi8-r
-Group: Office
-Requires: lyx-common
-
-Provides: lyx-gost
-Conflicts: lyx-gost-cp1251
-Obsoletes: lyx-gost
-
-
-%description %ENC1
-The %name package contains the LyX/LaTeX class for preparing documents
-according to Russian GOST's demands.
-
-%description %ENC1 -l ru_RU.KOI8-R
-Пакет %name содержит класс для LyX/LaTeX, предназначенный для
-подготовки технической текстовой документации в соответствии
-с ГОСТ 2.105-95 (с рамками и основными надписями).
-
-%package %ENC2
-Summary: The GOST class files for LyX in cp1251 encoding
-Summary(ru_RU.KOI8-R): Класс документа по ГОСТ для LyX в кодировке cp1251
-Group: Office
-Requires: lyx-common
-
-Provides: lyx-gost
-Conflicts: lyx-gost-koi8-r
-Obsoletes: lyx-gost
-
-%description %ENC2
-The %name package contains the LyX/LaTeX class for preparing documents
-according to Russian GOST's demands.
-
-%description %ENC2 -l ru_RU.KOI8-R
-Пакет %name содержит класс для LyX/LaTeX, предназначенный для
-подготовки технической текстовой документации в соответствии
-с ГОСТ 2.105-95 (с рамками и основными надписями).
-
-
 %prep
 %setup -q
 
 %install
 
-mkdir -p $RPM_BUILD_ROOT%_datadir/lyx/{layouts,templates,clipart}
+mkdir -p %buildroot%_datadir/lyx/
+cp -a layouts templates clipart %buildroot%_datadir/lyx/
 
-# Перекодируем исходные файлы в две целевых кодировки
-# Обещаю избавиться от этого рано или поздно :)
-
-for TARENC in %ENC1 %ENC2; do
-
-#	for f in layouts/*.layout; do
-#		iconv -f %ENC1 -t $TARENC "$f" | sed -e "s/.inc/-$TARENC.inc/g" >"$RPM_BUILD_ROOT/%_datadir/lyx/layouts/`basename $f .layout`-$TARENC.layout"
-#	done
-
-	for f in layouts/*.inc; do
-		iconv -f %ENC1 -t $TARENC "$f" >"$RPM_BUILD_ROOT/%_datadir/lyx/layouts/`basename $f .inc`-$TARENC.inc"
-	done
-	
-	for f in templates/*.lyx; do
-		iconv -f %ENC1 -t $TARENC "$f" | sed -e "s/koi8-r/$TARENC/g" >"$RPM_BUILD_ROOT/%_datadir/lyx/templates/`basename $f .lyx`-$TARENC.lyx"
-	done
-
-	mkdir -p $RPM_BUILD_ROOT%_datadir/doc/%name-$TARENC
-	cd doc
-	for f in *;	do
-		iconv -f %ENC1 -t $TARENC <"$f" >"$RPM_BUILD_ROOT/%_datadir/doc/%name-$TARENC/$f"
-	done
-	cd -
-done
-
-for i in layouts/*.layout clipart/*; do
-	install -D -m644 $i ${RPM_BUILD_ROOT}/%_datadir/lyx/$i
-done
-
-%post %ENC1
+%post
 echo "Configuring LyX for your system..."
-cd %prefix/share/lyx
-./configure --srcdir
+cd %_datadir/lyx
+./configure.py --without-latex-config
 
-%post %ENC2
+%postun
 echo "Configuring LyX for your system..."
-cd %prefix/share/lyx
-./configure --srcdir
+cd %_datadir/lyx
+./configure.py --without-latex-config
 
-%preun
-
-%postun %ENC1
-echo "Configuring LyX for your system..."
-cd %prefix/share/lyx
-./configure --srcdir
-
-%postun %ENC2
-echo "Configuring LyX for your system..."
-cd %prefix/share/lyx
-./configure --srcdir
-
-%files %ENC1
-%doc %_datadir/doc/%name-%ENC1
-%_datadir/lyx/layouts/*-%ENC1.inc
+%files
+%doc doc
+%_datadir/lyx/layouts/*.inc
 %_datadir/lyx/layouts/gost.layout
 %_datadir/lyx/clipart/*
-%_datadir/lyx/templates/*-%ENC1.lyx
-
-
-%files %ENC2
-%doc %_datadir/doc/%name-%ENC2
-%_datadir/lyx/layouts/*-%ENC2.inc
-%_datadir/lyx/layouts/gost.layout
-%_datadir/lyx/clipart/*
-%_datadir/lyx/templates/*-%ENC2.lyx
-
+%_datadir/lyx/templates/*.lyx
 
 %changelog
+* Wed Dec 05 2007 Vitaly Lipatov <lav@altlinux.ru> 1.5.0-alt1
+- adopted layouts for new LyX version, recode to UTF-8
+- cleanup spec
+- tested with LyX 1.5.2
+
 * Thu Mar 03 2005 Vitaly Lipatov <lav@altlinux.ru> 1.3.5-alt2
 - add requires for lyx-common (bug #6197)
 

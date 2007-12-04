@@ -1,17 +1,19 @@
 # Standard textclass definition file. Taken from initial LyX source code
 # Author : Matthias Ettrich <ettrich@informatik.uni-tuebingen.de>
-# Transposed by Pascal André <andre@via.ecp.fr>
+# Transposed by Pascal AndrÃ© <andre@via.ecp.fr>
 # Heavily modifed and enhanced by several developers.
 
 # Cut & paste from various LyX layouts plus some major modifications
 # GOST textclass (c) 2001 Vitaly Lipatov, Boris Balabanov
+# Vitaly Lipatov (c) 2007
 # Our parts licensed under GPL
 
-# This include file contains all non numbered versions of the
-# sectionning-related commands that are useful for article-like
+# This include files contains all non numbered versions of the
+# sectioning-related commands that are useful for article-like
 # document classes, but not for letters. It should be Input after
-# modying the style of the regular sectionning layouts.
+# modying the style of the regular sectioning layouts.
 
+Format 4
 # Section* style definition
 Style Section*
   CopyStyle		Section
@@ -22,7 +24,7 @@ End
 
 # Subsection* style definition
 Style Subsection*
-  CopyStyle		SubSection
+  CopyStyle		Subsection
   Margin		Static
   LatexName		subsection*
   LabelType		No_Label

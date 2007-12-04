@@ -1,15 +1,17 @@
 # Standard textclass definition file. Taken from initial LyX source code
 # Author : Matthias Ettrich <ettrich@informatik.uni-tuebingen.de>
-# Transposed by Pascal AndrÈ <andre@via.ecp.fr>
+# Transposed by Pascal Andr√© <andre@via.ecp.fr>
 # Heavily modifed and enhanced by several developers.
 
 # Cut & paste from various LyX layouts plus some major modifications
 # GOST textclass (c) 2001 Vitaly Lipatov, Boris Balabanov
+# Vitaly Lipatov (c) 2007
 # Our parts licensed under GPL
-# This include file contains all numbered sectionning-related
+# This include files contains all numbered sectionning-related
 # commands that are useful for article-like document classes, but not
 # for letters.
 
+Format 4
 
 # Section style definition
 Style Section
@@ -25,8 +27,13 @@ Style Section
   ParSep		0.7
   Align			Block
   AlignPossible		Block, Left
-  LabelType		Counter_Section
-  LabelStringAppendix   "“…Ãœ÷≈Œ…≈ "
+  OptionalArgs          1
+
+  LabelType			Counter
+  LabelCounter		section
+  LabelString           "\arabic{section}"
+  LabelStringAppendix   "–ü—Ä–∏–ª–æ–∂–µ–Ω–∏–µ \Alph{section}"
+  TocLevel              0
 
   # standard font definition
   Font 
@@ -50,7 +57,12 @@ Style Subsection
   ParSep		0.5
   Align			Block
   AlignPossible		Block, Left
-  LabelType		Counter_Subsection
+  LabelType			Counter
+  LabelCounter		subsection
+  LabelString           "@Section@.\arabic{subsection}"
+  LabelStringAppendix   "\Alph{section}.\arabic{subsection}"
+
+  OptionalArgs          1
 
   # standard font definition
   Font 
@@ -74,7 +86,11 @@ Style Subsubsection
   ParSep		0.4
   Align			Block
   AlignPossible		Block, Left
-  LabelType		Counter_SubSubSection
+  LabelType			Counter
+  LabelCounter		subsubsection
+  LabelString       "@Subsection@.\arabic{subsubsection}"
+  LabelStringAppendix  "@Subsection@.\arabic{subsubsection}"
+  OptionalArgs          1
 
   # standard font definition
   Font 
@@ -86,6 +102,8 @@ End
 
 # Paragraph style definition
 Style Paragraph
+# TODO: use it
+#CopyStyle             Subsubsection
   Margin		Dynamic
   LatexType		Command
   LatexName		paragraph
@@ -98,7 +116,9 @@ Style Paragraph
   ParSep		0.4
   Align			Block
   AlignPossible		Block, Left
-  LabelType		Counter_Paragraph
+  LabelType			Counter
+  LabelCounter		paragraph
+  LabelString           "@Section@.\arabic{paragraph}"
 
   # standard font definition
   Font 
@@ -123,7 +143,9 @@ Style Subparagraph
   ParSep		0.4
   Align			Block
   AlignPossible		Block, Left
-  LabelType		Counter_SubParagraph
+  LabelType			Counter
+  LabelCounter		subparagraph
+  LabelString           "@Paragraph@.\arabic{subparagraph}"
 
   # standard font definition
   Font 

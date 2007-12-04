@@ -1,71 +1,93 @@
-#LyX 1.3 created this file. For more info see http://www.lyx.org/
-\lyxformat 221
+#LyX 1.5.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 276
+\begin_document
+\begin_header
 \textclass gost
 \begin_preamble
 \NoFrames
 \end_preamble
 \language russian
 \inputencoding koi8-r
-\fontscheme default
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
 \graphics default
 \float_placement H
 \paperfontsize 12
-\spacing single 
+\spacing single
 \papersize a4paper
-\paperpackage a4
-\use_geometry 1
-\use_amsmath 0
-\use_natbib 0
-\use_numerical_citations 0
+\use_geometry true
+\use_amsmath 1
+\use_esint 0
+\cite_engine basic
+\use_bibtopic false
 \paperorientation portrait
 \secnumdepth 3
 \tocdepth 2
 \paragraph_separation indent
 \defskip medskip
 \quotes_language french
-\quotes_times 2
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\end_header
 
-\layout НаимОрганизации
+\begin_body
 
-Название организации
-\layout ГрифСогласовано
+\begin_layout п²п╟п╦п╪п·я─пЁп╟п╫п╦п╥п╟я├п╦п╦
+п²п╟п╥п╡п╟п╫п╦п╣ п╬я─пЁп╟п╫п╦п╥п╟я├п╦п╦
+\end_layout
 
-СОГЛАСОВАНО
-\newline 
-Гл.
- конструктор
-\layout ГрифУтверждения
+\begin_layout п⌠я─п╦я└п║п╬пЁп╩п╟я│п╬п╡п╟п╫п╬
+п║п·п⌠п⌡п░п║п·п▓п░п²п·
+\newline
+п⌠п╩.
+ п╨п╬п╫я│я┌я─я┐п╨я┌п╬я─
+\end_layout
 
-УТВЕРЖДЕНО
-\newline 
-Первый заместитель директора
-\layout НаимИзделия
+\begin_layout п⌠я─п╦я└пёя┌п╡п╣я─п╤п╢п╣п╫п╦я▐
+пёп╒п▓п∙п═п√п■п∙п²п·
+\newline
+п÷п╣я─п╡я▀п╧ п╥п╟п╪п╣я│я┌п╦я┌п╣п╩я▄ п╢п╦я─п╣п╨я┌п╬я─п╟
+\end_layout
 
-Единая система конструкторской документации
-\layout НаимДокумента
+\begin_layout п²п╟п╦п╪п≤п╥п╢п╣п╩п╦я▐
+п∙п╢п╦п╫п╟я▐ я│п╦я│я┌п╣п╪п╟ п╨п╬п╫я│я┌я─я┐п╨я┌п╬я─я│п╨п╬п╧ п╢п╬п╨я┐п╪п╣п╫я┌п╟я├п╦п╦
+\end_layout
 
-Общие требования к текстовым документам
-\layout Исполнители
+\begin_layout п²п╟п╦п╪п■п╬п╨я┐п╪п╣п╫я┌п╟
+п·п╠я┴п╦п╣ я┌я─п╣п╠п╬п╡п╟п╫п╦я▐ п╨ я┌п╣п╨я│я┌п╬п╡я▀п╪ п╢п╬п╨я┐п╪п╣п╫я┌п╟п╪
+\end_layout
 
-Исполнители:
-\newline 
-Иванов
-\newline 
-Петров
-\newline 
-Сидоров
-\layout ДатаДокумента
+\begin_layout п≤я│п©п╬п╩п╫п╦я┌п╣п╩п╦
+п≤я│п©п╬п╩п╫п╦я┌п╣п╩п╦:
+\newline
+п≤п╡п╟п╫п╬п╡
+\newline
+п÷п╣я┌я─п╬п╡
+\newline
+п║п╦п╢п╬я─п╬п╡
+\end_layout
 
-2005
-\layout Standard
+\begin_layout п■п╟я┌п╟п■п╬п╨я┐п╪п╣п╫я┌п╟
+2007
+\end_layout
+
+\begin_layout Standard
+\begin_inset LatexCommand tableofcontents
+
+\end_inset
 
 
-\begin_inset LatexCommand \tableofcontents{}
+\end_layout
 
-\end_inset 
-
-
-\the_end
+\end_body
+\end_document

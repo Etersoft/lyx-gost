@@ -1,9 +1,10 @@
 # Standard textclass definition file. Taken from initial LyX source code
 # Author : Matthias Ettrich <ettrich@informatik.uni-tuebingen.de>
-# Transposed by Pascal AndrИ <andre@via.ecp.fr>
+# Transposed by Pascal Andrп≤ <andre@via.ecp.fr>
 # Heavily modifed and enhanced by several developers.
 
 # GOST textclass (c) 2001 Vitaly Lipatov, Boris Balabanov
+# Vitaly Lipatov (c) 2007
 # Our parts licensed under GPL
 # This include file contains various standard environments for lists,
 # quotations, etc.
@@ -44,8 +45,8 @@ Style Quote
 End
 
 # Caption style definition
-#Style Подпись_к_рисунку
-Style ПодписьКРисунку
+#Style п÷п╬п╢п©п╦я│я▄_п╨_я─п╦я│я┐п╫п╨я┐
+Style п÷п╬п╢п©п╦я│я▄п п═п╦я│я┐п╫п╨я┐
 #Style Caption_for_figure
   Margin		First_Dynamic
   LatexType		Command
@@ -57,7 +58,7 @@ Style ПодписьКРисунку
   Align			Center
   AlignPossible		Center
   LabelType		Sensitive
-  LabelString		Рисунок:
+  LabelString		п═п╦я│я┐п╫п╬п╨:
 
   # label font definition
   LabelFont 
@@ -85,8 +86,8 @@ Style Caption
 End
 
 # Caption style definition
-#Style Подпись_к_таблице
-Style ПодписьКТаблице
+#Style п÷п╬п╢п©п╦я│я▄_п╨_я┌п╟п╠п╩п╦я├п╣
+Style п÷п╬п╢п©п╦я│я▄п п╒п╟п╠п╩п╦я├п╣
   Margin		First_Dynamic
   LatexType		Command
   LatexName		captiontable
@@ -97,7 +98,7 @@ Style ПодписьКТаблице
   Align			Left
   AlignPossible		Left
   LabelType		Sensitive
-  LabelString		Таблица:
+  LabelString		п╒п╟п╠п╩п╦я├п╟:
 
   # label font definition
   LabelFont 

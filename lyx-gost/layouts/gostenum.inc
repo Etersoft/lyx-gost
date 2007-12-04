@@ -1,10 +1,11 @@
 # GOST textclass (c) 2001 Vitaly Lipatov, Boris Balabanov
+# Vitaly Lipatov (c) 2007
 # Our parts licensed under GPL
 # Cut & paste from various LyX layouts plus some major modifications
 # This include file contains some numbered items for GOST
 
 # Engost style definition
-Style Пункт
+Style п÷я┐п╫п╨я┌
   Margin		Dynamic
   LatexType		Item_Environment
   LatexName		engost
@@ -15,8 +16,12 @@ Style Пункт
   LabelSep		xx
   Align			Block
   AlignPossible		Block, Left
-  LabelType		Counter_Subsubsection
-#  LabelType			No_Label
+
+  LabelType			Counter
+  LabelCounter		engoste
+  LabelString       "@Subsubsection@.\arabic{engoste}"
+  # TODO: Add \Azbuk instead Alph
+  LabelStringAppendix "\Alph{section}.\arabic{subsection}.\arabic{subsubsection}.\arabic{engoste}"
 
   # standard font definition
   #Font 
@@ -28,13 +33,13 @@ End
 
 
 # Ensubgost style definition
-Style Подпункт
+Style п÷п╬п╢п©я┐п╫п╨я┌
   Margin		Dynamic
   LatexType		Item_Environment
   LatexName		ensubgost
   NeedProtect		1
   NextNoIndent		0
-  ParIndent		MMMMMMMMM
+  ParIndent		MMMMMMMMMMMMMM
 #  LabelSep		xxx
   ParSkip		0.4
 #  TopSep		0.9
@@ -43,7 +48,11 @@ Style Подпункт
 #  LeftMargin		MMMMMM
   Align			Block
   AlignPossible		Block, Left
-  LabelType		Counter_Paragraph
+  LabelType			Counter
+  LabelCounter		ensubgoste
+  LabelString       "@п÷я┐п╫п╨я┌@.\arabic{ensubgoste}"
+  LabelStringAppendix       "@п÷я┐п╫п╨я┌@.\arabic{ensubgoste}"
+#  LabelStringAppendix       "\Alph{section}.\arabic{subsubsection}.\arabic{ensubgoste}"
 
   # standard font definition
   Font 

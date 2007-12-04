@@ -1,91 +1,92 @@
 # Standard textclass definition file. Taken from initial LyX source code
 # Author : Matthias Ettrich <ettrich@informatik.uni-tuebingen.de>
-# Transposed by Pascal AndrИ <andre@via.ecp.fr>
+# Transposed by Pascal Andrп≤ <andre@via.ecp.fr>
 # Heavily modifed and enhanced by several developers.
 
 # Cut & paste from various LyX layouts plus some major modifications
 # GOST textclass (c) 2001-2002 Vitaly Lipatov, Boris Balabanov
+# Vitaly Lipatov (c) 2007
 # Our parts licensed under GPL
 # This include file contains all obsolete layouts, kept for
 # historical reasons 
 
 Style Engost
-  ObsoletedBy		Пункт
+  ObsoletedBy		п÷я┐п╫п╨я┌
 End
 
 Style Ensubgost
-  ObsoletedBy		Подпункт
+  ObsoletedBy		п÷п╬п╢п©я┐п╫п╨я┌
 End
 
 Style Itemize
-  ObsoletedBy		Перечисление
+  ObsoletedBy		п÷п╣я─п╣я┤п╦я│п╩п╣п╫п╦п╣
 End
 
 Style Enumerate
-  ObsoletedBy		ПеречислениеНум
+  ObsoletedBy		п÷п╣я─п╣я┤п╦я│п╩п╣п╫п╦п╣п²я┐п╪
 End
 
 #Style Caption
-#  ObsoletedBy		ПодписьКРисунку
+#  ObsoletedBy		п÷п╬п╢п©п╦я│я▄п п═п╦я│я┐п╫п╨я┐
 #End
 
 #Style Caption
 #  ObsoletedBy		Caption_for_figure
 #End
 
-#Style НаимОрганизации
+#Style п²п╟п╦п╪п·я─пЁп╟п╫п╦п╥п╟я├п╦п╦
 #  ObsoletedBy		NameOrg
 #End
-#Style НаимОрганизации
-#  ObsoletedBy		Наим_организации
+#Style п²п╟п╦п╪п·я─пЁп╟п╫п╦п╥п╟я├п╦п╦
+#  ObsoletedBy		п²п╟п╦п╪_п╬я─пЁп╟п╫п╦п╥п╟я├п╦п╦
 #End
 
-#Style ДатаДокумента
-#  ObsoletedBy		Дата_документа
+#Style п■п╟я┌п╟п■п╬п╨я┐п╪п╣п╫я┌п╟
+#  ObsoletedBy		п■п╟я┌п╟_п╢п╬п╨я┐п╪п╣п╫я┌п╟
 #End
 
-#Style НаимИзделия
-#  ObsoletedBy		Наим_изделия
+#Style п²п╟п╦п╪п≤п╥п╢п╣п╩п╦я▐
+#  ObsoletedBy		п²п╟п╦п╪_п╦п╥п╢п╣п╩п╦я▐
 #End
 
-#Style НаимДокумента
-#  ObsoletedBy		Наим_документа
+#Style п²п╟п╦п╪п■п╬п╨я┐п╪п╣п╫я┌п╟
+#  ObsoletedBy		п²п╟п╦п╪_п╢п╬п╨я┐п╪п╣п╫я┌п╟
 #End
 
-Style КЛГИ
-  ObsoletedBy		Обозначение
+Style п п⌡п⌠п≤
+  ObsoletedBy		п·п╠п╬п╥п╫п╟я┤п╣п╫п╦п╣
 End
 
-Style Нормоконтролер
-  ObsoletedBy		Нормоконтролёр
+Style п²п╬я─п╪п╬п╨п╬п╫я┌я─п╬п╩п╣я─
+  ObsoletedBy		п²п╬я─п╪п╬п╨п╬п╫я┌я─п╬п╩я▒я─
 End
 
-# Возвращаемся обратно к нормальным названиям окружений
+# п▓п╬п╥п╡я─п╟я┴п╟п╣п╪я│я▐ п╬п╠я─п╟я┌п╫п╬ п╨ п╫п╬я─п╪п╟п╩я▄п╫я▀п╪ п╫п╟п╥п╡п╟п╫п╦я▐п╪ п╬п╨я─я┐п╤п╣п╫п╦п╧
 
-Style Обычный
+Style п·п╠я▀я┤п╫я▀п╧
   ObsoletedBy		Standard
 End
 
-Style Раздел
+Style п═п╟п╥п╢п╣п╩
   ObsoletedBy		Section
 End
 
-Style Подраздел
+Style п÷п╬п╢я─п╟п╥п╢п╣п╩
   ObsoletedBy		Subsection
 End
 
-Style Подподраздел
+Style п÷п╬п╢п©п╬п╢я─п╟п╥п╢п╣п╩
   ObsoletedBy		Subsubsection
 End
 
-Style Раздел*
+Style п═п╟п╥п╢п╣п╩*
   ObsoletedBy		Section*
 End
 
-Style Подраздел*
+Style п÷п╬п╢я─п╟п╥п╢п╣п╩*
   ObsoletedBy		Subsection*
 End
 
-Style Подподраздел*
+Style п÷п╬п╢п©п╬п╢я─п╟п╥п╢п╣п╩*
   ObsoletedBy		Subsubsection*
 End

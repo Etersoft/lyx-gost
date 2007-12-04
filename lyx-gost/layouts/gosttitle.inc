@@ -1,18 +1,20 @@
 # Standard textclass definition file. Taken from initial LyX source code
 # Author : Matthias Ettrich <ettrich@informatik.uni-tuebingen.de>
-# Transposed by Pascal AndrИ <andre@via.ecp.fr>
+# Transposed by Pascal Andrц╘ <andre@via.ecp.fr>
 # Heavily modifed and enhanced by several developers.
 # Split from stdstruct.inc by Hartmut Goebel <hartmut@noris.net>
 
 # Cut & paste from various LyX layouts plus some major modifications
 # GOST textclass (c) 2001 Vitaly Lipatov, Boris Balabanov
+# Vitaly Lipatov (c) 2007
 # Our parts licensed under GPL
 # This include files contains all layouts that handle the title area
 # a document, like title, author and such.
 
+Format 4
 # Title style definition
-#Style Наим_организации
-Style НаимОрганизации
+#Style п²п╟п╦п╪_п╬я─пЁп╟п╫п╦п╥п╟я├п╦п╦
+Style п²п╟п╦п╪п·я─пЁп╟п╫п╦п╥п╟я├п╦п╦
   Margin		Static
   LatexType		Command
   InTitle		1
@@ -34,9 +36,9 @@ Style НаимОрганизации
 End
 
 
-# Гриф согласования
-#Style Гриф_Cогласовано
-Style ГрифСогласовано
+# п⌠я─п╦я└ я│п╬пЁп╩п╟я│п╬п╡п╟п╫п╦я▐
+#Style п⌠я─п╦я└_Cп╬пЁп╩п╟я│п╬п╡п╟п╫п╬
+Style п⌠я─п╦я└п║п╬пЁп╩п╟я│п╬п╡п╟п╫п╬
   Margin		Static
   LatexType		Command
   InTitle		1
@@ -58,9 +60,9 @@ Style ГрифСогласовано
 
 End
 
-# Гриф утверждения
-#Style Гриф_Утверждения
-Style ГрифУтверждения
+# п⌠я─п╦я└ я┐я┌п╡п╣я─п╤п╢п╣п╫п╦я▐
+#Style п⌠я─п╦я└_пёя┌п╡п╣я─п╤п╢п╣п╫п╦я▐
+Style п⌠я─п╦я└пёя┌п╡п╣я─п╤п╢п╣п╫п╦я▐
   Margin		Right_Address_Box
   LatexType		Command
   InTitle		1
@@ -83,8 +85,8 @@ End
 
 
 # Title style definition
-#Style Наим_изделия
-Style НаимИзделия
+#Style п²п╟п╦п╪_п╦п╥п╢п╣п╩п╦я▐
+Style п²п╟п╦п╪п≤п╥п╢п╣п╩п╦я▐
   Margin		Static
   LatexType		Command
   InTitle		1
@@ -107,8 +109,8 @@ End
 
 
 # Title style definition
-#Style Наим_документа
-Style НаимДокумента
+#Style п²п╟п╦п╪_п╢п╬п╨я┐п╪п╣п╫я┌п╟
+Style п²п╟п╦п╪п■п╬п╨я┐п╪п╣п╫я┌п╟
   Margin		Static
   LatexType		Command
   InTitle		1
@@ -131,7 +133,7 @@ End
 
 
 # Title style definition
-Style Обозначение
+Style п·п╠п╬п╥п╫п╟я┤п╣п╫п╦п╣
   Margin		Static
   LatexType		Command
   InTitle		1
@@ -144,7 +146,7 @@ Style Обозначение
   Align			Center
   AlignPossible		Center
   LabelType		No_Label
-  LabelString   "КЛГИ:"
+  LabelString   "п п⌡п⌠п≤:"
 
   # standard font definition
   Font 
@@ -153,7 +155,7 @@ Style Обозначение
 End
 
 # Title style definition
-Style Разработал
+Style п═п╟п╥я─п╟п╠п╬я┌п╟п╩
   Margin		Static
   LatexType		Command
   InTitle		1
@@ -167,7 +169,7 @@ Style Разработал
   AlignPossible		Left
   LeftMargin            MMMMMMMMMMMMM
   LabelType		Static
-  LabelString   "Разработал: "
+  LabelString   "п═п╟п╥я─п╟п╠п╬я┌п╟п╩: "
 
   # standard font definition
   Font 
@@ -181,7 +183,7 @@ End
 
 
 # Title style definition
-Style Проверил
+Style п÷я─п╬п╡п╣я─п╦п╩
   Margin		Static
   LatexType		Command
   InTitle		1
@@ -195,7 +197,7 @@ Style Проверил
   AlignPossible		Left
   LeftMargin            MMMMMMMMMMMMM
   LabelType		Static
-  LabelString   "Проверил: "
+  LabelString   "п÷я─п╬п╡п╣я─п╦п╩: "
 
   # standard font definition
   Font 
@@ -208,7 +210,7 @@ Style Проверил
 End
 
 # Title style definition
-Style Нормоконтролёр
+Style п²п╬я─п╪п╬п╨п╬п╫я┌я─п╬п╩я▒я─
   Margin		Static
   LatexType		Command
   InTitle		1
@@ -222,7 +224,7 @@ Style Нормоконтролёр
   AlignPossible		Left
   LeftMargin            MMMMMMMMMMMMM
   LabelType		Static
-  LabelString   "Нормоконтролёр: "
+  LabelString   "п²п╬я─п╪п╬п╨п╬п╫я┌я─п╬п╩я▒я─: "
 
   # standard font definition
   Font 
@@ -235,7 +237,7 @@ Style Нормоконтролёр
 End
 
 # Title style definition
-Style Утвердил
+Style пёя┌п╡п╣я─п╢п╦п╩
   Margin		Static
   LatexType		Command
   InTitle		1
@@ -249,7 +251,7 @@ Style Утвердил
   AlignPossible		Left
   LeftMargin            MMMMMMMMMMMMM
   LabelType		Static
-  LabelString   "Утвердил: "
+  LabelString   "пёя┌п╡п╣я─п╢п╦п╩: "
 
   # standard font definition
   Font 
@@ -262,7 +264,7 @@ Style Утвердил
 End
 
 # Title style definition
-Style Исполнители
+Style п≤я│п©п╬п╩п╫п╦я┌п╣п╩п╦
   Margin		First_Dynamic
   LatexType		Command
   InTitle		1
@@ -276,7 +278,7 @@ Style Исполнители
   AlignPossible		Left
   LeftMargin            MMMMMMM
   LabelType		Static
-  #LabelString   "Исполнитель: "
+  #LabelString   "п≤я│п©п╬п╩п╫п╦я┌п╣п╩я▄: "
 
   # standard font definition
   Font 
@@ -311,8 +313,8 @@ Style Author
 End
 
 # Date style definition
-#Style Дата_документа
-Style ДатаДокумента
+#Style п■п╟я┌п╟_п╢п╬п╨я┐п╪п╣п╫я┌п╟
+Style п■п╟я┌п╟п■п╬п╨я┐п╪п╣п╫я┌п╟
   Margin		Dynamic
   LatexType		Command
   InTitle		1

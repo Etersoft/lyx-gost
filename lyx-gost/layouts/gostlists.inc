@@ -1,15 +1,16 @@
 # Standard textclass definition file. Taken from initial LyX source code
 # Author : Matthias Ettrich <ettrich@informatik.uni-tuebingen.de>
-# Transposed by Pascal AndrИ <andre@via.ecp.fr>
+# Transposed by Pascal Andrп≤ <andre@via.ecp.fr>
 # Heavily modifed and enhanced by several developers.
 
 # Cut & paste from various LyX layouts plus some major modifications
 # GOST textclass (c) 2001 Vitaly Lipatov, Boris Balabanov
+# Vitaly Lipatov (c) 2007
 # Our parts licensed under GPL
 # This include file contains various standard environments for lists.
 
 # Itemize style definition
-Style Перечисление
+Style п÷п╣я─п╣я┤п╦я│п╩п╣п╫п╦п╣
   Margin		First_Dynamic
   LatexType		Item_Environment
   LatexName		gostitemize
@@ -22,7 +23,9 @@ Style Перечисление
 #  ParSep		0.1
   Align			Block
   AlignPossible		Block, Left
-  LabelType		Static
+  LabelType		Itemize
+#  LabelType		Manual
+#  LabelString		"-"
   LabelString		"    --"
   
   Preamble
@@ -44,7 +47,7 @@ Style Перечисление
 End
 
 # Enumerate style definition
-Style ПеречислениеНум
+Style п÷п╣я─п╣я┤п╦я│п╩п╣п╫п╦п╣п²я┐п╪
   Margin		Static
   LatexType		Item_Environment
   LatexName		gostenumerate
@@ -59,7 +62,9 @@ Style ПеречислениеНум
  # ParSep		0.1
   Align			Block
   AlignPossible		Block, Left
-  LabelType		Counter_EnumI
+  LabelType			Enumerate
+  LabelCounter		enumi
+  LabelString           "\roman{enumi}"
   
   Preamble
     \renewcommand{\theenumi}{\asbuk{enumi}}
@@ -99,7 +104,7 @@ Style Description
   Align			Block
   AlignPossible		Block, Left
   LabelType		Manual
-  LabelString		MM
+  LabelString		"MM"
 
   # label font definition
   LabelFont 
@@ -121,7 +126,7 @@ Style List
   Align			Block
   AlignPossible		Block, Left
   LabelType		Manual
-  LabelString		00.00.0000
+  LabelString		"00.00.0000"
 
   #define the environment lyxlist
   Preamble

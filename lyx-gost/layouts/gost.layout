@@ -2,7 +2,7 @@
 #  \DeclareLaTeXClass[article]{GOST}
 # Article textclass definition file. Taken from initial LyX source code
 # Author : Matthias Ettrich <ettrich@informatik.uni-tuebingen.de>
-# Transposed by Pascal André <andre@via.ecp.fr>
+# Transposed by Pascal AndrÐ˜ <andre@via.ecp.fr>
 # Heavily modifed and enhanced by serveral developers
 
 # GOST textclass definition file.
@@ -10,6 +10,7 @@
 # and other files from /usr/share/texmf (tetex version)
 # (c) 2001-2002 Boris Balabanov
 # (c) 2001-2003 Vitaly Lipatov
+# Vitaly Lipatov (c) 2007
 # Our parts licensed under GPL
 # $Id$
 
@@ -45,27 +46,18 @@ End
 
 Input stdstruct.inc
 Input lyxmacros.inc
-Input stdfloats.inc
-Input stdcounters.inc
+Input gostfloats.inc
+Input gostcounters.inc
 
-Input gost-koi8-r.inc
-Input gostsections-koi8-r.inc
-Input gostenum-koi8-r.inc
-Input gostlists-koi8-r.inc
-Input goststarsections-koi8-r.inc
-Input gosttitle-koi8-r.inc
-Input gostlayouts-koi8-r.inc
-Input gostobsolete-koi8-r.inc
-
-Input gost-cp1251.inc
-Input gostsections-cp1251.inc
-Input gostenum-cp1251.inc
-Input gostlists-cp1251.inc
-Input goststarsections-cp1251.inc
-Input gosttitle-cp1251.inc
-Input gostlayouts-cp1251.inc
-Input gostobsolete-cp1251.inc
-
+Input gost.inc
+Input gostsections.inc
+Input gostenum.inc
+Input gostlists.inc
+Input goststarsections.inc
+Input gosttitle.inc
+Input gostlayouts.inc
+Input gostfloats.inc
+Input gostobsolete.inc
 
 # There are no some styles in the GOST.
 NoStyle Description
@@ -76,6 +68,6 @@ NoStyle Subparagraph
 NoStyle Subparagraph*
 #NoStyle Caption
 
-MaxCounter		Counter_Section
-SecNumDepth		3
-TocDepth		3
+#MaxCounter		Counter_Section
+#SecNumDepth		3
+#TocDepth		3
