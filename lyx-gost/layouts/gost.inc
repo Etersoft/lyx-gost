@@ -17,7 +17,7 @@ Preamble
 	\usepackage{footnpag} % Внешний вид сносок
 	\usepackage{ifthen}
 	\usepackage{mathtext} % Позволяет использовать русские буквы в формулах
-	\usepackage{babel} % Нужен здесь, а LyX 1.2.0 определяет его только после
+%	\usepackage{babel} % Нужен здесь, а LyX 1.2.0 определяет его только после
 	\usepackage{geometry}%для остановки плавающих объектов                                                           
 	\usepackage{float}
 	\usepackage{rotating}%вращение информации
@@ -474,13 +474,13 @@ Preamble
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Настройка вида подписей к рисункам и таблицам
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage[center]{caption2}
-\renewcommand{\captionlabeldelim}{~ ---}
+\usepackage[center]{caption}
+%\renewcommand{\captionlabeldelim}{~ ---}
 %\renewcommand\captionmargin{0.2cm}
 % Подпись к рисунку
-\addto\captionsrussian{%
-  \def\figurename{{\cyrРисунок}}%
-}
+%\addto\caption{%
+%  \def\figurename{{\cyrРисунок}}%
+%}
 % Команды для вывода подписей различного вида
 \newcommand{\captiontable}[1]{\caption{#1}}
 \newcommand{\captionfigure}[1]{\caption{#1}}
