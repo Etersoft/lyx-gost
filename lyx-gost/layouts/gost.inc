@@ -452,19 +452,24 @@ Preamble
   \ClearShipoutPicture%
   \ifnum \thepage = 1
 %параметры второго листа
-    \AddToShipoutPicture{\BackgroundPicture{\pathtosharedresource \namegostframe 2.eps}{0}}%
-    \enlargethispage{-2.5cm}%
+    \AddToShipoutPicture{\BackgroundPicture{\pathtosharedresource \namegostframe 1.pdf}{0}}%
+    \enlargethispage{2.3cm}%
+  \else%
+  \ifnum \thepage = 2
+    \AddToShipoutPicture{\BackgroundPicture{\pathtosharedresource \namegostframe 2.pdf}{0}}%
+    \enlargethispage{-2.7cm}
   \else%
 %параметры остальных листов
-    \AddToShipoutPicture{\BackgroundPicture{\pathtosharedresource \namegostframe 3.eps}{0}}%
+    \AddToShipoutPicture{\BackgroundPicture{\pathtosharedresource \namegostframe 3.pdf}{0}}%
 %    \AddToShipoutPicture{\BackgroundPicture{/tmp/changelist.eps}{0}}%
+  \fi%
   \fi%
 }
 \let\@evenfoot\@oddfoot
 \let\@evenhead\@oddhead
-\AddToShipoutPicture{\BackgroundPicture{\pathtosharedresource \namegostframe 1.eps}{0}}
+%\AddToShipoutPicture{\BackgroundPicture{\pathtosharedresource \namegostframe 1.pdf}{0}}
 \setlength{\textheight}{24.7cm}
-\enlargethispage{2.3cm}
+%\enlargethispage{2.3cm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Настройка вида подписей к рисункам и таблицам
